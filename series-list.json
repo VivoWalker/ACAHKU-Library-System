@@ -1,0 +1,3418 @@
+[
+  {
+    "series_id": 1,
+    "author_id": 334,
+    "author_name": "10mo",
+    "title": "學生會的一存 1",
+    "book_id": "334/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 20,
+    "author_name": "CHIROLU",
+    "title": "為了女兒，我說不定連魔王都能幹掉。 1",
+    "book_id": "20/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 69,
+    "author_name": "CLAMP",
+    "title": "xxxHOLiC 2",
+    "book_id": "69/1/2"
+  },
+  {
+    "series_id": 2,
+    "author_id": 69,
+    "author_name": "CLAMP",
+    "title": "CARDCAPTOR櫻 1",
+    "book_id": "69/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 69,
+    "author_name": "CLAMP",
+    "title": "魔法騎士 1",
+    "book_id": "69/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 69,
+    "author_name": "CLAMP",
+    "title": "魔法騎士2 1",
+    "book_id": "69/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 254,
+    "author_name": "Carlo Zen",
+    "title": "幼女戰記 1",
+    "book_id": "254/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 192,
+    "author_name": "DITAMA",
+    "title": "魔力女管家 1",
+    "book_id": "192/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 275,
+    "author_name": "HERO",
+    "title": "堀與宮村 1",
+    "book_id": "275/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 125,
+    "author_name": "Koi",
+    "title": "請問您今天要來點兔子嗎？ 1",
+    "book_id": "125/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 363,
+    "author_name": "M",
+    "title": "L change the WorLd 1",
+    "book_id": "363/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 355,
+    "author_name": "PEACH-PIT",
+    "title": "守護甜心！ 1",
+    "book_id": "355/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 10,
+    "author_name": "TAa",
+    "title": "衛宮家今天的餐桌風景 1",
+    "book_id": "10/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 193,
+    "author_name": "TYPE-MOON",
+    "title": "Fate/stay night comic battle 1",
+    "book_id": "193/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 193,
+    "author_name": "TYPE-MOON",
+    "title": "Fate/Grand Order漫畫精選集 4",
+    "book_id": "193/2/4"
+  },
+  {
+    "series_id": 3,
+    "author_id": 193,
+    "author_name": "TYPE-MOON",
+    "title": "Fate/Grand Order短篇漫畫集 8",
+    "book_id": "193/3/8"
+  },
+  {
+    "series_id": 4,
+    "author_id": 193,
+    "author_name": "TYPE-MOON",
+    "title": "Fate/Prototype Tribute Phantasm 1",
+    "book_id": "193/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 22,
+    "author_name": "cosMo@暴走P",
+    "title": "初音未來的消失  小說版 1",
+    "book_id": "22/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 250,
+    "author_name": "masha",
+    "title": "異種族風俗娘評鑑指南 1",
+    "book_id": "250/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 145,
+    "author_name": "okama",
+    "title": "CLOTH ROAD 服裝戰鬥師 3",
+    "book_id": "145/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 303,
+    "author_name": "あおのなち",
+    "title": "與你相戀到生命盡頭 1",
+    "book_id": "303/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 339,
+    "author_name": "あらゐけいいち",
+    "title": "日常 1",
+    "book_id": "339/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 386,
+    "author_name": "いたち",
+    "title": "敗北女角太多了！@comic 1",
+    "book_id": "386/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 307,
+    "author_name": "えすのサカエ",
+    "title": "未來日記 1",
+    "book_id": "307/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 11,
+    "author_name": "おだまさる",
+    "title": "LoveLive! Sunshine!! 1",
+    "book_id": "11/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 381,
+    "author_name": "おんたま",
+    "title": "小初音未來的日常 3",
+    "book_id": "381/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 50,
+    "author_name": "かきふらい",
+    "title": "K-ON！輕音部！High School 1",
+    "book_id": "50/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 50,
+    "author_name": "かきふらい",
+    "title": "K-ON！輕音部！Shuffle 1",
+    "book_id": "50/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 50,
+    "author_name": "かきふらい",
+    "title": "K-ON! 輕音部 1",
+    "book_id": "50/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 201,
+    "author_name": "かなん",
+    "title": "銀河天使 1",
+    "book_id": "201/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 201,
+    "author_name": "かなん",
+    "title": "銀河天使2nd 1",
+    "book_id": "201/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 202,
+    "author_name": "きゆづきちとこ",
+    "title": "棺材，旅人，怪蝙蝠 1",
+    "book_id": "202/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 343,
+    "author_name": "さがら梨々",
+    "title": "你遭難了嗎？ 1",
+    "book_id": "343/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 59,
+    "author_name": "しめさば",
+    "title": "刮掉鬍子的我與撿到的女高中生 1",
+    "book_id": "59/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 59,
+    "author_name": "しめさば",
+    "title": "刮掉鬍子的我與撿到的女高中生 Each Stories 1",
+    "book_id": "59/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 380,
+    "author_name": "じん（自然の敵P）",
+    "title": "KAGEROU DAZE in a daze 陽炎眩亂 1",
+    "book_id": "380/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 56,
+    "author_name": "すずきあきら",
+    "title": "百花繚亂 1",
+    "book_id": "56/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 314,
+    "author_name": "すなこ",
+    "title": "才不會嫁給你！ 1",
+    "book_id": "314/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 86,
+    "author_name": "せるげい",
+    "title": "熊熊勇闖異世界 1",
+    "book_id": "86/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 143,
+    "author_name": "たあたんちぇっく",
+    "title": "校園烏托邦 學美向前衝！ 1",
+    "book_id": "143/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 234,
+    "author_name": "たけのこ星人",
+    "title": "Fate/EXTRA CCC FoxTail 1",
+    "book_id": "234/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 169,
+    "author_name": "ためこう",
+    "title": "布穀鳥的夢 1",
+    "book_id": "169/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 328,
+    "author_name": "なもり",
+    "title": "輕鬆百合 1",
+    "book_id": "328/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 390,
+    "author_name": "にいさとる",
+    "title": "防風少年 WIND BREAKER 3",
+    "book_id": "390/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 277,
+    "author_name": "はまじあき",
+    "title": "孤獨搖滾 Bocchi the Rock! 1",
+    "book_id": "277/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 252,
+    "author_name": "はむばね",
+    "title": "我們真的學不來！非日常的例題集 1",
+    "book_id": "252/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 252,
+    "author_name": "はむばね",
+    "title": "我們真的學不來！未體驗的時間表 1",
+    "book_id": "252/2/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 132,
+    "author_name": "ひろやまひろし",
+    "title": "Fate/kaleid liner 魔法少女☆伊莉雅 1",
+    "book_id": "132/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 132,
+    "author_name": "ひろやまひろし",
+    "title": "Fate/kaleid liner 魔法少女☆伊莉雅 2wei! 1",
+    "book_id": "132/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 132,
+    "author_name": "ひろやまひろし",
+    "title": "Fate/kaleid liner 魔法少女☆伊莉雅 3rei!! 1",
+    "book_id": "132/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 171,
+    "author_name": "ふじた",
+    "title": "阿宅的戀愛太難 1",
+    "book_id": "171/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 322,
+    "author_name": "ぷよ",
+    "title": "小涼宮春日的憂鬱 1",
+    "book_id": "322/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 77,
+    "author_name": "まりお金田",
+    "title": "愛的省錢大作戰 1",
+    "book_id": "77/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 356,
+    "author_name": "みもり",
+    "title": "寒蟬鳴泣之時 宵越篇 1",
+    "book_id": "356/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 29,
+    "author_name": "アネコユサギ",
+    "title": "盾之勇者成名錄 1",
+    "book_id": "29/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 333,
+    "author_name": "ウダノゾミ",
+    "title": "田中君總是如此慵懶 1",
+    "book_id": "333/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 347,
+    "author_name": "オダワラハコネ",
+    "title": "櫻之詩 -The tear flows because of tenderness.- 1",
+    "book_id": "347/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 348,
+    "author_name": "カヅホ",
+    "title": "愛殺寶貝 1",
+    "book_id": "348/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 245,
+    "author_name": "サブロウタ",
+    "title": "柑橘味香氣 1",
+    "book_id": "245/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 245,
+    "author_name": "サブロウタ",
+    "title": "柑橘味香氣PLUS~ 1",
+    "book_id": "245/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 330,
+    "author_name": "サマミヤアカザ",
+    "title": "逝者 x 詩歌 1",
+    "book_id": "330/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 130,
+    "author_name": "タスクオーナ",
+    "title": "Fate/stay night [Heaven's Feel] 1",
+    "book_id": "130/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 87,
+    "author_name": "ツガニガク",
+    "title": "涼宮春日的憂鬱 1",
+    "book_id": "87/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 53,
+    "author_name": "ハナカゲ",
+    "title": "魔法少女小圓 1",
+    "book_id": "53/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 345,
+    "author_name": "ヒロユキ",
+    "title": "漫畫家與助手 1",
+    "book_id": "345/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 387,
+    "author_name": "フライ",
+    "title": "如果，今天能見到小柴葵。 3",
+    "book_id": "387/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 12,
+    "author_name": "マツセタイチ",
+    "title": "Re:從零開始的異世界生活  第一章 王都的一日篇 1",
+    "book_id": "12/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 12,
+    "author_name": "マツセタイチ",
+    "title": "Re:從零開始的異世界生活  第二章 宅邸的一週篇 1",
+    "book_id": "12/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 12,
+    "author_name": "マツセタイチ",
+    "title": "Re:從零開始的異世界生活  第三章 Truth of Zero 1",
+    "book_id": "12/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 12,
+    "author_name": "マツセタイチ",
+    "title": "劍鬼戀歌 Re:從零開始的異世界生活†真銘譚 1",
+    "book_id": "12/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 23,
+    "author_name": "ヤマザキコレ",
+    "title": "魔法使的新娘 1",
+    "book_id": "23/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 329,
+    "author_name": "ヤマザキマリ",
+    "title": "羅馬浴場 1",
+    "book_id": "329/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 346,
+    "author_name": "リヨ",
+    "title": "看漫畫搞懂！FGO 1",
+    "book_id": "346/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 205,
+    "author_name": "一色登希彥",
+    "title": "日本沈沒 1",
+    "book_id": "205/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 91,
+    "author_name": "七月隆文",
+    "title": "明天，我要和昨天的妳約會 1",
+    "book_id": "91/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 383,
+    "author_name": "三原みつき",
+    "title": "魔技科的劍士與召喚魔王 6",
+    "book_id": "383/1/6"
+  },
+  {
+    "series_id": 1,
+    "author_id": 93,
+    "author_name": "三屋咲悠",
+    "title": "學戰都市 Asterisk 1",
+    "book_id": "93/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 93,
+    "author_name": "三屋咲悠",
+    "title": "學戰都市 Asterisk 外傳 葵恩薔兒之翼 1",
+    "book_id": "93/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 90,
+    "author_name": "三田紀房",
+    "title": "東大特訓班 1",
+    "book_id": "90/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 26,
+    "author_name": "三田誠",
+    "title": "艾梅洛閣下II世事件簿 1",
+    "book_id": "26/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 14,
+    "author_name": "三部敬",
+    "title": "只有我不存在的城市 1",
+    "book_id": "14/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 263,
+    "author_name": "三雲岳斗",
+    "title": "噬血狂襲 1",
+    "book_id": "263/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 301,
+    "author_name": "上乃龍也",
+    "title": "聖誕之吻 1",
+    "book_id": "301/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 214,
+    "author_name": "上条明峰",
+    "title": "鬼眼狂刀 1",
+    "book_id": "214/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 327,
+    "author_name": "上栖綴人",
+    "title": "新妹魔王的契約者 7",
+    "book_id": "327/1/7"
+  },
+  {
+    "series_id": 1,
+    "author_id": 110,
+    "author_name": "中山幸",
+    "title": "調教咖啡廳 1",
+    "book_id": "110/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 325,
+    "author_name": "中村光",
+    "title": "聖☆哥傳 1",
+    "book_id": "325/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 18,
+    "author_name": "中村明日美子",
+    "title": "同級生 1",
+    "book_id": "18/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 18,
+    "author_name": "中村明日美子",
+    "title": "卒業生 （春） 1",
+    "book_id": "18/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 18,
+    "author_name": "中村明日美子",
+    "title": "卒業生 （冬） 1",
+    "book_id": "18/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 18,
+    "author_name": "中村明日美子",
+    "title": "空與原 1",
+    "book_id": "18/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 81,
+    "author_name": "中村純也",
+    "title": "你的名字 1",
+    "book_id": "81/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 207,
+    "author_name": "中条比紗也",
+    "title": "女生勿進 1",
+    "book_id": "207/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 95,
+    "author_name": "丸山くがね",
+    "title": "OVERLORD 1",
+    "book_id": "95/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 96,
+    "author_name": "丸戶史明",
+    "title": "不起眼女主角培育法 1",
+    "book_id": "96/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 96,
+    "author_name": "丸戶史明",
+    "title": "不起眼女主角培育法 Memorial 1",
+    "book_id": "96/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 210,
+    "author_name": "乃木坂太郎",
+    "title": "醫龍 20",
+    "book_id": "210/1/20"
+  },
+  {
+    "series_id": 1,
+    "author_id": 172,
+    "author_name": "久保帶人",
+    "title": "BLEACH 漂靈 （死神） 1",
+    "book_id": "172/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 200,
+    "author_name": "久米田康治",
+    "title": "絕望先生 1",
+    "book_id": "200/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 62,
+    "author_name": "二ノ宮知子",
+    "title": "交響情人夢 1",
+    "book_id": "62/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 215,
+    "author_name": "井上和郎",
+    "title": "美鳥伴身邊 1",
+    "book_id": "215/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 236,
+    "author_name": "井上雄彦",
+    "title": "男兒當入樽 （灌籃高手）SLAM DUNK 1",
+    "book_id": "236/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 236,
+    "author_name": "井上雄彦",
+    "title": "浪客行 1",
+    "book_id": "236/2/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 76,
+    "author_name": "人間人間",
+    "title": "終將成為妳 關於佐伯沙彌香 1",
+    "book_id": "76/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 76,
+    "author_name": "人間人間",
+    "title": "無法成為神明的少女 1",
+    "book_id": "76/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 3,
+    "author_name": "仲谷鳰",
+    "title": "終將成為妳 1",
+    "book_id": "3/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 3,
+    "author_name": "仲谷鳰",
+    "title": "與妳相依 敲響心扉的百合精選集 1",
+    "book_id": "3/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 97,
+    "author_name": "伏瀬",
+    "title": "關於我轉生變成史萊姆這檔事 1",
+    "book_id": "97/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 85,
+    "author_name": "伏見つかさ",
+    "title": "情色漫畫老師 eromanga sensei 1",
+    "book_id": "85/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 85,
+    "author_name": "伏見つかさ",
+    "title": "我的妹妹哪裏有這麽可愛？ 1",
+    "book_id": "85/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 288,
+    "author_name": "佐々木少年",
+    "title": "真月譚—月姬 1",
+    "book_id": "288/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 388,
+    "author_name": "佐伯さん",
+    "title": "關於我在無意間被隔壁的天使變成廢柴這件事 1",
+    "book_id": "388/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 115,
+    "author_name": "佐伯俊",
+    "title": "食戟之靈 1",
+    "book_id": "115/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 136,
+    "author_name": "佐島勤",
+    "title": "魔法科高中的劣等生 1",
+    "book_id": "136/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 94,
+    "author_name": "佐藤友生",
+    "title": "明智警部之事件簿 1",
+    "book_id": "94/1/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 185,
+    "author_name": "佐藤文也",
+    "title": "今田一少年之事件簿 20週年紀念系列 1",
+    "book_id": "185/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 185,
+    "author_name": "佐藤文也",
+    "title": "金田一少年之事件薄R 1",
+    "book_id": "185/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 185,
+    "author_name": "佐藤文也",
+    "title": "金田一37歲之事件薄 1",
+    "book_id": "185/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 80,
+    "author_name": "佐野徹夜",
+    "title": "妳在月夜裡閃耀光輝 1",
+    "book_id": "80/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 332,
+    "author_name": "佐野菜見",
+    "title": "在下坂本，有何貴幹? 1",
+    "book_id": "332/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 190,
+    "author_name": "依澄れい",
+    "title": ".hack//黃昏的腕輪傳說 1",
+    "book_id": "190/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 190,
+    "author_name": "依澄れい",
+    "title": "小小魔法使響 1",
+    "book_id": "190/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 319,
+    "author_name": "入江君人",
+    "title": "神不在的星期天 1",
+    "book_id": "319/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 280,
+    "author_name": "入間人間",
+    "title": "安達與島村 2",
+    "book_id": "280/1/2"
+  },
+  {
+    "series_id": 1,
+    "author_id": 267,
+    "author_name": "冨樫義博",
+    "title": "幽遊白書 1",
+    "book_id": "267/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 267,
+    "author_name": "冨樫義博",
+    "title": "HUNTERxHUNTER 1",
+    "book_id": "267/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 246,
+    "author_name": "冬川基",
+    "title": "科學超電磁砲 1",
+    "book_id": "246/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 374,
+    "author_name": "冰樹世一",
+    "title": "異世界迷宮裡的後宮生活 1",
+    "book_id": "374/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 92,
+    "author_name": "出水ぽすか",
+    "title": "約定的夢幻島 1",
+    "book_id": "92/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 310,
+    "author_name": "前川涼",
+    "title": "動物小町 1",
+    "book_id": "310/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 353,
+    "author_name": "加瀨大輝",
+    "title": "漫研。 1",
+    "book_id": "353/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 34,
+    "author_name": "加納新太",
+    "title": "雲之彼端·約定的地方 1",
+    "book_id": "34/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 223,
+    "author_name": "加藤元浩",
+    "title": "神通小偵探 1",
+    "book_id": "223/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 237,
+    "author_name": "加藤和惠",
+    "title": "青之祓魔師 1",
+    "book_id": "237/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 320,
+    "author_name": "助兵器",
+    "title": "神不在的星期天 2",
+    "book_id": "320/1/2"
+  },
+  {
+    "series_id": 1,
+    "author_id": 341,
+    "author_name": "勇人",
+    "title": "花丸幼稚園 1",
+    "book_id": "341/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 238,
+    "author_name": "北条司",
+    "title": "城市獵人 18",
+    "book_id": "238/1/18"
+  },
+  {
+    "series_id": 1,
+    "author_id": 308,
+    "author_name": "十日草輔",
+    "title": "國王排名 1",
+    "book_id": "308/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 131,
+    "author_name": "原田源五郎",
+    "title": "魔王之類的啦！ 1",
+    "book_id": "131/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 258,
+    "author_name": "古宮九時",
+    "title": "我預見明日逝去的妳 1",
+    "book_id": "258/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 196,
+    "author_name": "叶恭弘",
+    "title": "漂亮臉蛋 1",
+    "book_id": "196/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 118,
+    "author_name": "合鴨ひろゆき",
+    "title": "加速世界 1",
+    "book_id": "118/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 38,
+    "author_name": "吉岡公威",
+    "title": "妙廟美少女 1",
+    "book_id": "38/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 38,
+    "author_name": "吉岡公威",
+    "title": "碧藍之海 1",
+    "book_id": "38/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 367,
+    "author_name": "名束くだん",
+    "title": "殺戮的天使 11",
+    "book_id": "367/1/11"
+  },
+  {
+    "series_id": 1,
+    "author_id": 276,
+    "author_name": "吳由姬",
+    "title": "金色琴弦 1",
+    "book_id": "276/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 109,
+    "author_name": "吾峠呼世晴",
+    "title": "鬼滅之刃 1",
+    "book_id": "109/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 161,
+    "author_name": "和ケ原聡司",
+    "title": "打工吧！魔王大人 1",
+    "book_id": "161/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 378,
+    "author_name": "和久井健",
+    "title": "東京卍復仇者 1",
+    "book_id": "378/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 268,
+    "author_name": "和月伸宏",
+    "title": "浪客劍心 1",
+    "book_id": "268/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 300,
+    "author_name": "土日月",
+    "title": "這個勇者明明超TUEEE卻過度謹慎 1",
+    "book_id": "300/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 155,
+    "author_name": "土橋真二郎",
+    "title": "扉之外 1",
+    "book_id": "155/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 324,
+    "author_name": "堀田きいち",
+    "title": "少年同盟 1",
+    "book_id": "324/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 272,
+    "author_name": "堀田由美",
+    "title": "棋靈王 10",
+    "book_id": "272/1/10"
+  },
+  {
+    "series_id": 1,
+    "author_id": 84,
+    "author_name": "堀越耕平",
+    "title": "我的英雄學院 雄英白書 1",
+    "book_id": "84/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 84,
+    "author_name": "堀越耕平",
+    "title": "我的英雄學院 1",
+    "book_id": "84/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 370,
+    "author_name": "夏元雅人",
+    "title": "機動戰士鋼彈0083 REBELLION 1",
+    "book_id": "370/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 139,
+    "author_name": "夏達",
+    "title": "子不語 1",
+    "book_id": "139/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 274,
+    "author_name": "夕蜜柑",
+    "title": "怕痛的我，把防禦力點滿就對了 1",
+    "book_id": "274/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 359,
+    "author_name": "外海良基",
+    "title": "寒蟬鳴泣之時 暇潰篇 1",
+    "book_id": "359/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 140,
+    "author_name": "大久保篤",
+    "title": "炎炎消防隊 1",
+    "book_id": "140/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 140,
+    "author_name": "大久保篤",
+    "title": "SOUL EATER噬魂師 1",
+    "book_id": "140/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 2,
+    "author_name": "大今良時",
+    "title": "聲之形 1",
+    "book_id": "2/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 48,
+    "author_name": "大和田秀樹",
+    "title": "萌系魔法師 1",
+    "book_id": "48/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 48,
+    "author_name": "大和田秀樹",
+    "title": "機動戰士鋼彈桑 1",
+    "book_id": "48/2/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 48,
+    "author_name": "大和田秀樹",
+    "title": "果然沒錯☆俗語新解鋼彈桑 1",
+    "book_id": "48/4/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 48,
+    "author_name": "大和田秀樹",
+    "title": "小泉麻雀傳説 1",
+    "book_id": "48/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 36,
+    "author_name": "大喜多夜",
+    "title": "K -Lost Small World 1",
+    "book_id": "36/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 266,
+    "author_name": "大場鶇",
+    "title": "DEATH NOTE 1",
+    "book_id": "266/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 188,
+    "author_name": "大岩ケンジ",
+    "title": "歡迎加入NHK！ 1",
+    "book_id": "188/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 382,
+    "author_name": "大岩ケンヂ",
+    "title": "Sugar Dark 1",
+    "book_id": "382/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 305,
+    "author_name": "大暮維人",
+    "title": "化物語 1",
+    "book_id": "305/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 305,
+    "author_name": "大暮維人",
+    "title": "天上天下 7",
+    "book_id": "305/2/7"
+  },
+  {
+    "series_id": 1,
+    "author_id": 106,
+    "author_name": "大森 藤ノ",
+    "title": "在地下城尋求邂逅是否搞錯了什麼 1",
+    "book_id": "106/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 292,
+    "author_name": "大高忍",
+    "title": "魔奇 1",
+    "book_id": "292/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 54,
+    "author_name": "天杉貴志",
+    "title": "魔法少女和美 1",
+    "book_id": "54/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 149,
+    "author_name": "天樹征丸",
+    "title": "金田一少年之事件薄 1",
+    "book_id": "149/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 289,
+    "author_name": "天野明",
+    "title": "家庭教師　REBORN! 1",
+    "book_id": "289/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 289,
+    "author_name": "天野明",
+    "title": "家庭教師　REBORN! 愛藏版 6",
+    "book_id": "289/2/6"
+  },
+  {
+    "series_id": 1,
+    "author_id": 247,
+    "author_name": "太田モアレ",
+    "title": "寄生蟲Reversi 1",
+    "book_id": "247/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 153,
+    "author_name": "奈須きのこ",
+    "title": "空之境界 1",
+    "book_id": "153/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 227,
+    "author_name": "安彥良和",
+    "title": "機動戰士GUNDAM The ORIGIN 1",
+    "book_id": "227/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 225,
+    "author_name": "安童夕馬",
+    "title": "感應少年EIJI 1",
+    "book_id": "225/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 82,
+    "author_name": "安藤慈朗",
+    "title": "棋靈少女 1",
+    "book_id": "82/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 88,
+    "author_name": "安里アサト",
+    "title": "86—不存在的戰區 1",
+    "book_id": "88/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 52,
+    "author_name": "宮島禮吏",
+    "title": "出租女友 1",
+    "book_id": "52/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 52,
+    "author_name": "宮島禮吏",
+    "title": "怕生女友 1",
+    "book_id": "52/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 52,
+    "author_name": "宮島禮吏",
+    "title": "AKB49戀愛禁止條例 1",
+    "book_id": "52/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 184,
+    "author_name": "小林尽",
+    "title": "校園迷糊大王 1",
+    "book_id": "184/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 184,
+    "author_name": "小林尽",
+    "title": "校園迷糊大王Z 1",
+    "book_id": "184/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 183,
+    "author_name": "小林立",
+    "title": "咲-Saki- 1",
+    "book_id": "183/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 162,
+    "author_name": "小畑健",
+    "title": "爆漫。 1",
+    "book_id": "162/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 75,
+    "author_name": "小野敏洋",
+    "title": "電擊的皮卡丘 1",
+    "book_id": "75/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 101,
+    "author_name": "尚月地",
+    "title": "豔漢 4",
+    "book_id": "101/1/4"
+  },
+  {
+    "series_id": 1,
+    "author_id": 368,
+    "author_name": "尚村透",
+    "title": "狂賭之淵 2",
+    "book_id": "368/1/2"
+  },
+  {
+    "series_id": 1,
+    "author_id": 241,
+    "author_name": "尾田栄一郎",
+    "title": "One Piece 1",
+    "book_id": "241/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 241,
+    "author_name": "尾田栄一郎",
+    "title": "WANTED! 尾田榮一郎短篇集 1",
+    "book_id": "241/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 134,
+    "author_name": "屋久悠木",
+    "title": "弱角友崎同學 1",
+    "book_id": "134/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 340,
+    "author_name": "山内泰延",
+    "title": "男子高校生的日常 1",
+    "book_id": "340/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 40,
+    "author_name": "山口悟",
+    "title": "轉生成女性向遊戲只有毀滅END的壞人大小姐 1",
+    "book_id": "40/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 164,
+    "author_name": "山口飛翔",
+    "title": "藍色時期 1",
+    "book_id": "164/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 19,
+    "author_name": "山本大和",
+    "title": "終結的熾天使 1",
+    "book_id": "19/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 142,
+    "author_name": "山本智",
+    "title": "寵物小精靈特別篇 1",
+    "book_id": "142/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 79,
+    "author_name": "山本英夫",
+    "title": "異能者 1",
+    "book_id": "79/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 166,
+    "author_name": "山田ヒツジ",
+    "title": "能幹貓今天也憂鬱 4",
+    "book_id": "166/1/4"
+  },
+  {
+    "series_id": 1,
+    "author_id": 147,
+    "author_name": "山田恵庸",
+    "title": "逃離伊甸園 1",
+    "book_id": "147/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 287,
+    "author_name": "岡田芽武",
+    "title": "聖鬥士星矢 EPISODE. G 1",
+    "book_id": "287/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 43,
+    "author_name": "岩井恭平",
+    "title": "夏日大作戰 1",
+    "book_id": "43/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 242,
+    "author_name": "岸本斉史",
+    "title": "狐忍 （火影忍者）NARUTO 1",
+    "book_id": "242/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 242,
+    "author_name": "岸本斉史",
+    "title": "NARUTO火影忍者 鼬真傳[暗夜篇] 1",
+    "book_id": "242/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 242,
+    "author_name": "岸本斉史",
+    "title": "NARUTO火影忍者 鼬真傳[光明篇] 1",
+    "book_id": "242/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 100,
+    "author_name": "川上泰樹",
+    "title": "關於我轉生變成史萊姆這檔事 17",
+    "book_id": "100/1/17"
+  },
+  {
+    "series_id": 2,
+    "author_id": 100,
+    "author_name": "川上泰樹",
+    "title": "關於我轉生變成史萊姆這檔事 1",
+    "book_id": "100/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 74,
+    "author_name": "川原礫",
+    "title": "刀劍神域 1",
+    "book_id": "74/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 74,
+    "author_name": "川原礫",
+    "title": "刀劍神域 progressive  1",
+    "book_id": "74/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 74,
+    "author_name": "川原礫",
+    "title": "加速世界 5",
+    "book_id": "74/3/5"
+  },
+  {
+    "series_id": 1,
+    "author_id": 16,
+    "author_name": "川瀨淩",
+    "title": "推理要在晚餐後 1",
+    "book_id": "16/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 273,
+    "author_name": "平坂読",
+    "title": "如果有妹妹就好了。 1",
+    "book_id": "273/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 65,
+    "author_name": "平坂讀",
+    "title": "我的朋友很少 5",
+    "book_id": "65/1/5"
+  },
+  {
+    "series_id": 2,
+    "author_id": 65,
+    "author_name": "平坂讀",
+    "title": "我的朋友很少 Universe 1",
+    "book_id": "65/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 25,
+    "author_name": "平野耕太",
+    "title": "漂流武士 1",
+    "book_id": "25/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 61,
+    "author_name": "彩崎廉",
+    "title": "絶園暴風雨 1",
+    "book_id": "61/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 195,
+    "author_name": "影崎由那",
+    "title": "KARIN增血鬼 1",
+    "book_id": "195/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 375,
+    "author_name": "手代木史織",
+    "title": "聖鬥士星矢：冥王神話 1",
+    "book_id": "375/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 157,
+    "author_name": "支倉凍砂",
+    "title": "狼與辛香料 1",
+    "book_id": "157/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 17,
+    "author_name": "新川直司",
+    "title": "四月是你的謊言 1",
+    "book_id": "17/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 99,
+    "author_name": "新海誠",
+    "title": "天氣之子 1",
+    "book_id": "99/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 361,
+    "author_name": "方條ゆとり",
+    "title": "寒蟬鳴泣之時 綿流篇 1",
+    "book_id": "361/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 326,
+    "author_name": "日丸屋秀和",
+    "title": "義呆利 1",
+    "book_id": "326/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 204,
+    "author_name": "早川智子",
+    "title": "完美小姐進化論 1",
+    "book_id": "204/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 71,
+    "author_name": "明月千里",
+    "title": "月見月理解的偵探殺人 1",
+    "book_id": "71/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 336,
+    "author_name": "明鏡シスイ",
+    "title": "軍武宅轉生魔法世界，靠現代武器開軍隊後宮！？ 1",
+    "book_id": "336/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 216,
+    "author_name": "星野桂",
+    "title": "驅魔少年 1",
+    "book_id": "216/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 7,
+    "author_name": "春場蔥",
+    "title": "五等分的新娘 1",
+    "book_id": "7/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 261,
+    "author_name": "春夏冬アタル",
+    "title": "我的朋友♂♀可愛到讓人困擾！ 1",
+    "book_id": "261/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 42,
+    "author_name": "春日部タケル",
+    "title": "目標是與美少女作家一起打造百萬暢銷書！！ 1",
+    "book_id": "42/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 335,
+    "author_name": "春河35",
+    "title": "文豪Stray Dogs 2",
+    "book_id": "335/1/2"
+  },
+  {
+    "series_id": 1,
+    "author_id": 321,
+    "author_name": "春野友矢",
+    "title": "屬性同好會 1",
+    "book_id": "321/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 251,
+    "author_name": "時雨澤惠一",
+    "title": "刀劍神域外傳 Gun Gale Online 1",
+    "book_id": "251/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 251,
+    "author_name": "時雨澤惠一",
+    "title": "奇諾之旅 -the Beautiful World- 5",
+    "book_id": "251/2/5"
+  },
+  {
+    "series_id": 1,
+    "author_id": 5,
+    "author_name": "曉なつめ",
+    "title": "為美好的世界獻上祝福！ 1",
+    "book_id": "5/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 262,
+    "author_name": "望月奈奈",
+    "title": "零之使魔 1",
+    "book_id": "262/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 60,
+    "author_name": "望月淳",
+    "title": "潘朵拉之心 1",
+    "book_id": "60/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 199,
+    "author_name": "木下さくら",
+    "title": "抓鬼天狗幫 1",
+    "book_id": "199/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 232,
+    "author_name": "木尾士目",
+    "title": "現代視覺研究會 1",
+    "book_id": "232/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 122,
+    "author_name": "木村心一",
+    "title": "這樣算是殭屍嗎？ 1",
+    "book_id": "122/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 302,
+    "author_name": "木緒なち",
+    "title": "我們的重製人生 1",
+    "book_id": "302/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 45,
+    "author_name": "末次由紀",
+    "title": "花牌情緣 1",
+    "book_id": "45/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 41,
+    "author_name": "本田誠",
+    "title": "空色感染爆發 1",
+    "book_id": "41/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 24,
+    "author_name": "杉井光",
+    "title": "離別的鋼琴奏鳴曲 1",
+    "book_id": "24/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 299,
+    "author_name": "杉基イクラ",
+    "title": "糖果子彈 1",
+    "book_id": "299/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 159,
+    "author_name": "村田雄介",
+    "title": "高速達陣21 1",
+    "book_id": "159/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 371,
+    "author_name": "東清彥",
+    "title": "四葉妹妹！ 12",
+    "book_id": "371/1/12"
+  },
+  {
+    "series_id": 1,
+    "author_id": 240,
+    "author_name": "松井優征",
+    "title": "暗殺教室 1",
+    "book_id": "240/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 295,
+    "author_name": "松本直也",
+    "title": "怪獸8號 1",
+    "book_id": "295/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 296,
+    "author_name": "松田朱夏",
+    "title": "鬼滅之刃 1",
+    "book_id": "296/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 271,
+    "author_name": "板垣惠介",
+    "title": "刃牙 1",
+    "book_id": "271/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 379,
+    "author_name": "林ふみの",
+    "title": "新世界福音戰士 鋼鐵的Girl Friend 2nd 1",
+    "book_id": "379/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 123,
+    "author_name": "枯野瑛",
+    "title": "末日時在做什麼？有沒有空？可以來拯救嗎？ 1",
+    "book_id": "123/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 32,
+    "author_name": "柳實冬貴",
+    "title": "對魔導學園35試驗小隊 1",
+    "book_id": "32/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 156,
+    "author_name": "柴村仁",
+    "title": "我家有個狐仙大人 1",
+    "book_id": "156/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 366,
+    "author_name": "桂正和",
+    "title": "ZETMAN 1",
+    "book_id": "366/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 47,
+    "author_name": "桂游生丸",
+    "title": "女生愛女生 1",
+    "book_id": "47/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 360,
+    "author_name": "桃山ひなせ",
+    "title": "寒蟬鳴泣之時解 皆殺篇 1",
+    "book_id": "360/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 64,
+    "author_name": "桐島ヨウ",
+    "title": "初綻之戀 1",
+    "book_id": "64/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 342,
+    "author_name": "桜場小春",
+    "title": "南家三姊妹 1",
+    "book_id": "342/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 27,
+    "author_name": "桜日梯子",
+    "title": "我讓最想被擁抱的男人給威脅了 1",
+    "book_id": "27/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 376,
+    "author_name": "森小太郎",
+    "title": "天元突破 紅蓮螺巖 6",
+    "book_id": "376/1/6"
+  },
+  {
+    "series_id": 1,
+    "author_id": 211,
+    "author_name": "森崎くるみ",
+    "title": "死神與巧克力百匯 1",
+    "book_id": "211/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 44,
+    "author_name": "森橋賓果",
+    "title": "東雲侑子系列 1",
+    "book_id": "44/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 21,
+    "author_name": "椎名輕穗",
+    "title": "只想告訴你 1",
+    "book_id": "21/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 244,
+    "author_name": "椎橋寬",
+    "title": "百鬼小當家 1",
+    "book_id": "244/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 338,
+    "author_name": "椿泉",
+    "title": "月刊少女野崎 1",
+    "book_id": "338/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 168,
+    "author_name": "楳圖一雄",
+    "title": "洗禮 1",
+    "book_id": "168/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 152,
+    "author_name": "榎宮祐",
+    "title": "異界幻想世紀 2",
+    "book_id": "152/1/2"
+  },
+  {
+    "series_id": 2,
+    "author_id": 152,
+    "author_name": "榎宮祐",
+    "title": "NO GAME NO LIFE 遊戲人生 1",
+    "book_id": "152/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 194,
+    "author_name": "樋口大輔",
+    "title": "WHISTLE! 1",
+    "book_id": "194/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 63,
+    "author_name": "樞簗",
+    "title": "黑執事 1",
+    "book_id": "63/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 180,
+    "author_name": "橋口隆志",
+    "title": "日式麵包王 1",
+    "book_id": "180/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 67,
+    "author_name": "橋本紡",
+    "title": "仰望半月的夜空 1",
+    "book_id": "67/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 1,
+    "author_name": "橘公司",
+    "title": "約會大作戰 DATE A LIVE 1",
+    "book_id": "1/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 1,
+    "author_name": "橘公司",
+    "title": "約會大作戰 DATE A BULLET 赤黑新章 1",
+    "book_id": "1/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 103,
+    "author_name": "橙乃 ままれ",
+    "title": "記錄的地平線 1",
+    "book_id": "103/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 103,
+    "author_name": "橙乃 ままれ",
+    "title": "魔王勇者 1",
+    "book_id": "103/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 293,
+    "author_name": "武井宏之",
+    "title": "通靈王 1",
+    "book_id": "293/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 228,
+    "author_name": "武內直子",
+    "title": "美少女戰士 1",
+    "book_id": "228/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 228,
+    "author_name": "武內直子",
+    "title": "水手戰士V 1",
+    "book_id": "228/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 112,
+    "author_name": "武田綾乃",
+    "title": "吹響吧！上低音號 1",
+    "book_id": "112/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 364,
+    "author_name": "殆ど死んでいる",
+    "title": "異世界歸來的舅舅 2",
+    "book_id": "364/1/2"
+  },
+  {
+    "series_id": 1,
+    "author_id": 189,
+    "author_name": "水上悟志",
+    "title": "戰國妖狐 1",
+    "book_id": "189/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 57,
+    "author_name": "水城正太郎",
+    "title": "最後大魔王 1",
+    "book_id": "57/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 221,
+    "author_name": "水野英多",
+    "title": "少年偵探 ～推理之絆～ 1",
+    "book_id": "221/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 350,
+    "author_name": "江口夏実",
+    "title": "鬼燈的冷徹 1",
+    "book_id": "350/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 31,
+    "author_name": "池山田剛",
+    "title": "鈴木同學，我愛你！ 1",
+    "book_id": "31/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 186,
+    "author_name": "池田晃久",
+    "title": "十字架與吸血鬼 1",
+    "book_id": "186/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 186,
+    "author_name": "池田晃久",
+    "title": "十字架與吸血鬼seasonII 1",
+    "book_id": "186/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 218,
+    "author_name": "河下水希",
+    "title": "草莓100% 1",
+    "book_id": "218/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 312,
+    "author_name": "浦沢直樹",
+    "title": "20世紀少年 1",
+    "book_id": "312/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 312,
+    "author_name": "浦沢直樹",
+    "title": "21世紀少年 1",
+    "book_id": "312/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 312,
+    "author_name": "浦沢直樹",
+    "title": "MONSTER 1",
+    "book_id": "312/3/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 256,
+    "author_name": "涼風涼",
+    "title": "進擊的巨人Before the fall 1",
+    "book_id": "256/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 98,
+    "author_name": "深山フギン",
+    "title": "Overlord  1",
+    "book_id": "98/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 351,
+    "author_name": "清原紘",
+    "title": "Another 1",
+    "book_id": "351/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 55,
+    "author_name": "渡航",
+    "title": "果然我的青春戀愛喜劇搞錯了 1",
+    "book_id": "55/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 213,
+    "author_name": "渡辺航",
+    "title": "電車男 - 不過，我出發了。 1",
+    "book_id": "213/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 141,
+    "author_name": "湯尼嶽崎",
+    "title": "湯尼嶽崎的鋼彈漫畫 1",
+    "book_id": "141/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 220,
+    "author_name": "瀨尾公治",
+    "title": "涼風 1",
+    "book_id": "220/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 222,
+    "author_name": "瀨川はじめ",
+    "title": "食靈 1",
+    "book_id": "222/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 222,
+    "author_name": "瀨川はじめ",
+    "title": "食靈～追儺之章～ 1",
+    "book_id": "222/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 243,
+    "author_name": "瀨川雅樹",
+    "title": "BASILISK～甲賀忍法帖～ 1",
+    "book_id": "243/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 191,
+    "author_name": "犬威赤彥",
+    "title": "漫畫派對 1",
+    "book_id": "191/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 66,
+    "author_name": "犬村小六",
+    "title": "獻給某飛行員的戀歌 1",
+    "book_id": "66/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 78,
+    "author_name": "犬江しんすけ",
+    "title": "認真和我談戀愛！ 1",
+    "book_id": "78/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 35,
+    "author_name": "玉川しぇんな",
+    "title": "貓與魔法的解咒之吻 1",
+    "book_id": "35/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 260,
+    "author_name": "玲見敦",
+    "title": "東京闇鴉 1",
+    "book_id": "260/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 119,
+    "author_name": "理不尽な孫の手",
+    "title": "無職轉生～到了異世界就拿出真本事～ 1",
+    "book_id": "119/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 331,
+    "author_name": "琴山",
+    "title": "徹夜之歌 1",
+    "book_id": "331/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 151,
+    "author_name": "瑞智士記",
+    "title": "星刻龍騎士 1",
+    "book_id": "151/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 349,
+    "author_name": "田中芳樹",
+    "title": "銀河英雄傳說 1",
+    "book_id": "349/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 104,
+    "author_name": "田口囁一",
+    "title": "以一年一萬元的價格，賣掉我剩餘的壽命。 1",
+    "book_id": "104/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 233,
+    "author_name": "田村隆平",
+    "title": "魔B爸B 1",
+    "book_id": "233/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 291,
+    "author_name": "田辺伊衛郎",
+    "title": "結界師 1",
+    "book_id": "291/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 209,
+    "author_name": "畑健二郎",
+    "title": "爆笑管家工作日誌 1",
+    "book_id": "209/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 28,
+    "author_name": "白石定規",
+    "title": "魔女之旅 1",
+    "book_id": "28/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 28,
+    "author_name": "白石定規",
+    "title": "魔女之旅 1",
+    "book_id": "28/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 116,
+    "author_name": "白米良",
+    "title": "平凡職業造就世界最強 1",
+    "book_id": "116/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 116,
+    "author_name": "白米良",
+    "title": "平凡職業造就世界最強 短篇集 1",
+    "book_id": "116/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 116,
+    "author_name": "白米良",
+    "title": "平凡職業造就世界最強 零 1",
+    "book_id": "116/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 265,
+    "author_name": "白鳥士郎",
+    "title": "龍王的工作！ 1",
+    "book_id": "265/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 179,
+    "author_name": "相樂總",
+    "title": "變態王子與不笑貓 1",
+    "book_id": "179/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 219,
+    "author_name": "真島浩",
+    "title": "聖石小子普魯的奇妙日記 1",
+    "book_id": "219/1/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 219,
+    "author_name": "真島浩",
+    "title": "獸魂 1",
+    "book_id": "219/3/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 219,
+    "author_name": "真島浩",
+    "title": "聖石小子 1",
+    "book_id": "219/2/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 219,
+    "author_name": "真島浩",
+    "title": "Fairy Tail 魔導少年 1",
+    "book_id": "219/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 249,
+    "author_name": "真木蛍五",
+    "title": "武守同學不只可愛而已 1",
+    "book_id": "249/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 6,
+    "author_name": "真田まこと",
+    "title": "殺戮的天使 1",
+    "book_id": "6/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 323,
+    "author_name": "矢吹健太朗",
+    "title": "妖幻三重奏 8",
+    "book_id": "323/1/8"
+  },
+  {
+    "series_id": 1,
+    "author_id": 160,
+    "author_name": "矢吹健太郎",
+    "title": "黑色野貓 BLACK CAT 1",
+    "book_id": "160/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 160,
+    "author_name": "矢吹健太郎",
+    "title": "茶煲情緣る 1",
+    "book_id": "160/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 160,
+    "author_name": "矢吹健太郎",
+    "title": "茶煲情緣るDarkness 1",
+    "book_id": "160/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 294,
+    "author_name": "矢島綾",
+    "title": "鬼滅之刃 無限列車篇 1",
+    "book_id": "294/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 294,
+    "author_name": "矢島綾",
+    "title": "鬼滅之刃 風之道標 1",
+    "book_id": "294/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 294,
+    "author_name": "矢島綾",
+    "title": "鬼滅之刃 幸福之花 1",
+    "book_id": "294/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 294,
+    "author_name": "矢島綾",
+    "title": "鬼滅之刃 單翅之蝶 1",
+    "book_id": "294/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 120,
+    "author_name": "矢澤愛",
+    "title": "NANA 5",
+    "book_id": "120/1/5"
+  },
+  {
+    "series_id": 1,
+    "author_id": 181,
+    "author_name": "石田スイ",
+    "title": "東京喰種 1",
+    "book_id": "181/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 181,
+    "author_name": "石田スイ",
+    "title": "東京喰種：re 1",
+    "book_id": "181/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 68,
+    "author_name": "神崎紫電",
+    "title": "臨界殺機 3",
+    "book_id": "68/1/3"
+  },
+  {
+    "series_id": 2,
+    "author_id": 68,
+    "author_name": "神崎紫電",
+    "title": "黑色子彈 1",
+    "book_id": "68/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 313,
+    "author_name": "福地翼",
+    "title": "植木的法則 2",
+    "book_id": "313/1/2"
+  },
+  {
+    "series_id": 2,
+    "author_id": 313,
+    "author_name": "福地翼",
+    "title": "植木的法則PLUS 1",
+    "book_id": "313/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 229,
+    "author_name": "福本伸行",
+    "title": "賭博默示錄 1",
+    "book_id": "229/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 229,
+    "author_name": "福本伸行",
+    "title": "賭博破戒錄 1",
+    "book_id": "229/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 229,
+    "author_name": "福本伸行",
+    "title": "賭博墮天錄 1",
+    "book_id": "229/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 182,
+    "author_name": "私屋カヲル",
+    "title": "萌少女的戀愛時光 1",
+    "book_id": "182/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 121,
+    "author_name": "秋",
+    "title": "魔王學院的不適任者～史上最強的魔王始祖，轉生就讀子孫們的學校～ 4",
+    "book_id": "121/1/4"
+  },
+  {
+    "series_id": 1,
+    "author_id": 369,
+    "author_name": "種村有菜",
+    "title": "I.O.N — 依音 1",
+    "book_id": "369/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 108,
+    "author_name": "稲垣理一郎",
+    "title": "Dr. STONE 1",
+    "book_id": "108/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 108,
+    "author_name": "稲垣理一郎",
+    "title": "Dr. STONE reboot:百夜 1",
+    "book_id": "108/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 105,
+    "author_name": "稻山覺也",
+    "title": "偶像大師 百萬人演唱會! Blooming Clover 1",
+    "book_id": "105/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 150,
+    "author_name": "空知英秋",
+    "title": "銀魂 1",
+    "book_id": "150/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 102,
+    "author_name": "窪田航",
+    "title": "天氣之子 1",
+    "book_id": "102/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 257,
+    "author_name": "竜ノ湖太郎",
+    "title": "問題兒童都來自異世界？ 1",
+    "book_id": "257/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 83,
+    "author_name": "竹井10日",
+    "title": "如果折斷她的旗 1",
+    "book_id": "83/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 315,
+    "author_name": "竹宮ゆゆこ",
+    "title": "TIGER×DRAGON！(TORADORA!) 1",
+    "book_id": "315/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 315,
+    "author_name": "竹宮ゆゆこ",
+    "title": "TIGER×DRAGON！(TORADORA!) SPINOFF 1",
+    "book_id": "315/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 306,
+    "author_name": "笹倉綾人",
+    "title": "灼眼的夏娜 1",
+    "book_id": "306/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 352,
+    "author_name": "籐卷忠俊",
+    "title": "幻影籃球王 Kuroko no Basuke 黑子的籃球 1",
+    "book_id": "352/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 114,
+    "author_name": "米澤穗信",
+    "title": "〈古籍研究社〉系列 1",
+    "book_id": "114/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 372,
+    "author_name": "粉山カタ",
+    "title": "不可解的我的一切 1",
+    "book_id": "372/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 212,
+    "author_name": "紗久楽さわ",
+    "title": "百と卍 1",
+    "book_id": "212/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 317,
+    "author_name": "絕叫",
+    "title": "TIGER×DRAGON！(TORADORA!) 1",
+    "book_id": "317/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 146,
+    "author_name": "綠洲幸",
+    "title": "妖怪連絡簿（夏目友人帳） 1",
+    "book_id": "146/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 197,
+    "author_name": "綾峰欄人",
+    "title": "GetBackers閃靈二人組 1",
+    "book_id": "197/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 137,
+    "author_name": "綾辻行人",
+    "title": "ANOTHER 1",
+    "book_id": "137/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 70,
+    "author_name": "綾野なおと",
+    "title": "11eyes -罪與罰與贖的少女- 1",
+    "book_id": "70/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 111,
+    "author_name": "羊太郎",
+    "title": "不正經的魔術講師與禁忌教典 1",
+    "book_id": "111/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 384,
+    "author_name": "美水かがみ",
+    "title": "幸運☆星 1",
+    "book_id": "384/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 290,
+    "author_name": "羽海野千花",
+    "title": "蜂蜜與四野草 1",
+    "book_id": "290/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 279,
+    "author_name": "羽賀ソウケソ",
+    "title": "回復術士的重啟人生 1",
+    "book_id": "279/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 178,
+    "author_name": "聽貓芝居",
+    "title": "線上遊戲的老婆不可能是女生？ 1",
+    "book_id": "178/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 285,
+    "author_name": "臼井儀人",
+    "title": "蠟筆小新 1",
+    "book_id": "285/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 175,
+    "author_name": "船津一輝",
+    "title": "華麗咖喱食桌 28",
+    "book_id": "175/1/28"
+  },
+  {
+    "series_id": 1,
+    "author_id": 37,
+    "author_name": "芥見下下",
+    "title": "咒術迴戰 1",
+    "book_id": "37/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 198,
+    "author_name": "花見澤Q太郎",
+    "title": "Rec 1",
+    "book_id": "198/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 354,
+    "author_name": "若木民喜",
+    "title": "機神追女攻略 1",
+    "book_id": "354/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 148,
+    "author_name": "若杉公德",
+    "title": "爆粗BAND友 1",
+    "book_id": "148/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 226,
+    "author_name": "茶菓山心太",
+    "title": "輝夜姬想讓人告白～ 同人版 1",
+    "book_id": "226/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 30,
+    "author_name": "茶鳥木明代",
+    "title": "無頭騎士異聞錄 1",
+    "book_id": "30/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 316,
+    "author_name": "草野 紅壱",
+    "title": "人家一點都不喜歡啦！ 1",
+    "book_id": "316/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 282,
+    "author_name": "荒川弘",
+    "title": "鋼之煉金術師 1",
+    "book_id": "282/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 283,
+    "author_name": "荒木飛呂彥",
+    "title": "JOJO奇妙冒險 1",
+    "book_id": "283/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 283,
+    "author_name": "荒木飛呂彥",
+    "title": "JOJO奇妙冒險 Steel Ball Run 1",
+    "book_id": "283/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 283,
+    "author_name": "荒木飛呂彥",
+    "title": "JOJO奇妙冒險Part 6 STONE OCEAN 1",
+    "book_id": "283/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 174,
+    "author_name": "菅野文",
+    "title": "粉紅系男孩 1",
+    "book_id": "174/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 117,
+    "author_name": "萩原ダイスケ",
+    "title": "堀與宮村 3",
+    "book_id": "117/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 127,
+    "author_name": "萩埜まこと",
+    "title": "思慕魚的熱帶魚 1",
+    "book_id": "127/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 208,
+    "author_name": "葉月鼎",
+    "title": "只要妳說妳愛我 1",
+    "book_id": "208/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 298,
+    "author_name": "葉鳥螺子",
+    "title": "櫻蘭高校男公關部 1",
+    "book_id": "298/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 126,
+    "author_name": "葵せきな",
+    "title": "GAMERS 電玩咖！ 1",
+    "book_id": "126/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 51,
+    "author_name": "蒼山サグ",
+    "title": "蘿球社！ 1",
+    "book_id": "51/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 206,
+    "author_name": "藏王大志",
+    "title": "LOVE STAGE!! 1",
+    "book_id": "206/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 73,
+    "author_name": "藤原ここあ",
+    "title": "妖狐×僕SS 1",
+    "book_id": "73/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 255,
+    "author_name": "藤原飛呂",
+    "title": "會長是女僕大人！ 1",
+    "book_id": "255/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 297,
+    "author_name": "藤子·F·不二雄",
+    "title": "多啦A夢大長篇 1",
+    "book_id": "297/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 297,
+    "author_name": "藤子·F·不二雄",
+    "title": "叮噹 10",
+    "book_id": "297/2/10"
+  },
+  {
+    "series_id": 1,
+    "author_id": 365,
+    "author_name": "藤崎聖人",
+    "title": "WILD LIFE  12",
+    "book_id": "365/1/12"
+  },
+  {
+    "series_id": 1,
+    "author_id": 9,
+    "author_name": "藤本樹",
+    "title": "鏈鋸人 1",
+    "book_id": "9/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 9,
+    "author_name": "藤本樹",
+    "title": "FIRE PUNCH炎拳 4",
+    "book_id": "9/2/4"
+  },
+  {
+    "series_id": 3,
+    "author_id": 9,
+    "author_name": "藤本樹",
+    "title": "Look Back 驀然回首 1",
+    "book_id": "9/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 269,
+    "author_name": "藤沢亨",
+    "title": "麻辣教師GTO 1",
+    "book_id": "269/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 269,
+    "author_name": "藤沢亨",
+    "title": "麻辣教師GTO 湘南14日 1",
+    "book_id": "269/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 231,
+    "author_name": "藤近小梅",
+    "title": "我喜歡的女孩忘記戴眼鏡 1",
+    "book_id": "231/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 309,
+    "author_name": "藪內優",
+    "title": "我為兄狂！ 1",
+    "book_id": "309/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 253,
+    "author_name": "蝸牛くも",
+    "title": "哥布林殺手 1",
+    "book_id": "253/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 107,
+    "author_name": "衣笠彰梧",
+    "title": "歡迎來到實力至上主義的教室 1",
+    "book_id": "107/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 107,
+    "author_name": "衣笠彰梧",
+    "title": "歡迎來到實力至上主義的教室 2年級編 1",
+    "book_id": "107/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 113,
+    "author_name": "西出ケンゴロー",
+    "title": "Fate/Grand Order -Epic of Remnant- 1",
+    "book_id": "113/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 176,
+    "author_name": "西尾維新",
+    "title": "人間系列 1",
+    "book_id": "176/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 176,
+    "author_name": "西尾維新",
+    "title": "戲言系列 2",
+    "book_id": "176/2/2"
+  },
+  {
+    "series_id": 3,
+    "author_id": 176,
+    "author_name": "西尾維新",
+    "title": "物語系列 1",
+    "book_id": "176/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 176,
+    "author_name": "西尾維新",
+    "title": "刀語 1",
+    "book_id": "176/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 239,
+    "author_name": "西脇だっと",
+    "title": "Fate/stay night 1",
+    "book_id": "239/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 165,
+    "author_name": "許斐剛",
+    "title": "網球王子 1",
+    "book_id": "165/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 58,
+    "author_name": "諫山創",
+    "title": "進擊的巨人 1",
+    "book_id": "58/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 49,
+    "author_name": "谷川流",
+    "title": "涼宮春日系列 1",
+    "book_id": "49/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 39,
+    "author_name": "貓貓貓",
+    "title": "刀劍神域 女孩遊戲 1",
+    "book_id": "39/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 304,
+    "author_name": "貞本義行",
+    "title": "新世紀福音戰士 1",
+    "book_id": "304/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 46,
+    "author_name": "賀東招二",
+    "title": "驚爆危機 1",
+    "book_id": "46/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 8,
+    "author_name": "赤坂アカ",
+    "title": "輝夜姬想讓人告白～天才們的戀愛頭腦戰～ 1",
+    "book_id": "8/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 33,
+    "author_name": "赤星ジェイク",
+    "title": "舌吻 1",
+    "book_id": "33/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 163,
+    "author_name": "赤松健",
+    "title": "純情房東俏房客 3",
+    "book_id": "163/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 154,
+    "author_name": "赤衣丸步郎",
+    "title": "假面男僕 1",
+    "book_id": "154/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 284,
+    "author_name": "車田正美",
+    "title": "聖鬥士星矢 4",
+    "book_id": "284/1/4"
+  },
+  {
+    "series_id": 2,
+    "author_id": 284,
+    "author_name": "車田正美",
+    "title": "聖鬥士星矢 文庫版 1",
+    "book_id": "284/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 173,
+    "author_name": "遠山繪麻",
+    "title": "絕對戀愛命令 1",
+    "book_id": "173/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 337,
+    "author_name": "遠藤達哉",
+    "title": "SPY x FAMILY 1",
+    "book_id": "337/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 318,
+    "author_name": "那多ここね",
+    "title": "呆萌酷男孩 3",
+    "book_id": "318/1/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 167,
+    "author_name": "重野秀一",
+    "title": "頭文字D 1",
+    "book_id": "167/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 167,
+    "author_name": "重野秀一",
+    "title": "頭文字D 外傳 1",
+    "book_id": "167/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 128,
+    "author_name": "野村美月",
+    "title": "光在地球之時 1",
+    "book_id": "128/1/1"
+  },
+  {
+    "series_id": 5,
+    "author_id": 128,
+    "author_name": "野村美月",
+    "title": "文學少女 見習生篇 1",
+    "book_id": "128/5/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 128,
+    "author_name": "野村美月",
+    "title": "文學少女系列 3",
+    "book_id": "128/2/3"
+  },
+  {
+    "series_id": 3,
+    "author_id": 128,
+    "author_name": "野村美月",
+    "title": "文學少女愛戀插話集 1",
+    "book_id": "128/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 128,
+    "author_name": "野村美月",
+    "title": "青澀作家和文學少女編輯 1",
+    "book_id": "128/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 133,
+    "author_name": "金田陽介",
+    "title": "寄宿學校的朱麗葉 1",
+    "book_id": "133/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 72,
+    "author_name": "鈴木 Julietta",
+    "title": "見習元氣女神 1",
+    "book_id": "72/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 224,
+    "author_name": "鈴木信也",
+    "title": "強棒出擊 1",
+    "book_id": "224/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 357,
+    "author_name": "鈴木次郎",
+    "title": "寒蟬鳴泣之時 崇殺篇 1",
+    "book_id": "357/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 358,
+    "author_name": "鈴羅木かりん",
+    "title": "寒蟬鳴泣之時 鬼隱篇 1",
+    "book_id": "358/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 358,
+    "author_name": "鈴羅木かりん",
+    "title": "寒蟬鳴泣之時解 祭囃篇 1",
+    "book_id": "358/1/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 358,
+    "author_name": "鈴羅木かりん",
+    "title": "寒蟬鳴泣之時解 罪滅篇 3",
+    "book_id": "358/3/3"
+  },
+  {
+    "series_id": 1,
+    "author_id": 373,
+    "author_name": "鈴菌力リオ",
+    "title": "花與星 1",
+    "book_id": "373/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 158,
+    "author_name": "鎌池和馬",
+    "title": "魔法禁書目錄 1",
+    "book_id": "158/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 158,
+    "author_name": "鎌池和馬",
+    "title": "魔法禁書目錄SS 1",
+    "book_id": "158/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 278,
+    "author_name": "長月達平",
+    "title": "Re: 從零開始的異世界生活 1",
+    "book_id": "278/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 129,
+    "author_name": "長藏ヒロコ",
+    "title": "傳說的勇者的傳說 1",
+    "book_id": "129/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 385,
+    "author_name": "雨森焚火",
+    "title": "敗北女角太多了！ 1",
+    "book_id": "385/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 259,
+    "author_name": "雪森寧々",
+    "title": "久保同學不放過我 1",
+    "book_id": "259/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 203,
+    "author_name": "雷句誠",
+    "title": "魔界小金毛 6",
+    "book_id": "203/1/6"
+  },
+  {
+    "series_id": 1,
+    "author_id": 270,
+    "author_name": "青山剛昌",
+    "title": "名偵探柯南 1",
+    "book_id": "270/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 270,
+    "author_name": "青山剛昌",
+    "title": "名偵探柯南 特別篇 5",
+    "book_id": "270/2/5"
+  },
+  {
+    "series_id": 1,
+    "author_id": 264,
+    "author_name": "馬場康誌",
+    "title": "騎乘之王 1",
+    "book_id": "264/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 135,
+    "author_name": "馬場翁",
+    "title": "轉生成蜘蛛又怎樣！ 1",
+    "book_id": "135/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 281,
+    "author_name": "高嶋ひろみ",
+    "title": "便當與加瀨同學 1",
+    "book_id": "281/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 281,
+    "author_name": "高嶋ひろみ",
+    "title": "草莓蛋糕與加瀨同學 1",
+    "book_id": "281/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 281,
+    "author_name": "高嶋ひろみ",
+    "title": "圍裙與加瀨同學 1",
+    "book_id": "281/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 281,
+    "author_name": "高嶋ひろみ",
+    "title": "櫻花與加瀨同學 1",
+    "book_id": "281/4/1"
+  },
+  {
+    "series_id": 5,
+    "author_id": 281,
+    "author_name": "高嶋ひろみ",
+    "title": "山田與加瀨同學 1",
+    "book_id": "281/5/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 138,
+    "author_name": "高橋爾七郎",
+    "title": "灼眼的夏娜 1",
+    "book_id": "138/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 138,
+    "author_name": "高橋爾七郎",
+    "title": "灼眼的夏娜 0 Zero 1",
+    "book_id": "138/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 138,
+    "author_name": "高橋爾七郎",
+    "title": "灼眼的夏娜 S 1",
+    "book_id": "138/3/1"
+  },
+  {
+    "series_id": 4,
+    "author_id": 138,
+    "author_name": "高橋爾七郎",
+    "title": "灼眼的夏娜 炎之設定集 1",
+    "book_id": "138/4/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 187,
+    "author_name": "高橋留美子",
+    "title": "犬夜叉 1",
+    "book_id": "187/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 187,
+    "author_name": "高橋留美子",
+    "title": "福星小子 秘藏版 1",
+    "book_id": "187/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 177,
+    "author_name": "高橋陽一",
+    "title": "足球小將 1",
+    "book_id": "177/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 177,
+    "author_name": "高橋陽一",
+    "title": "足球小將 海外激鬥篇 EN LA LIGA 1",
+    "book_id": "177/2/1"
+  },
+  {
+    "series_id": 3,
+    "author_id": 177,
+    "author_name": "高橋陽一",
+    "title": "足球小將 海外激鬥篇 IN CALICO 1",
+    "book_id": "177/3/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 144,
+    "author_name": "高永ひなこ",
+    "title": "與你耽溺愛河 1",
+    "book_id": "144/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 344,
+    "author_name": "高津カリノ",
+    "title": "WORKING!!迷糊餐廳 1",
+    "book_id": "344/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 217,
+    "author_name": "高野真之",
+    "title": "BLOOD ALONE 1",
+    "book_id": "217/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 362,
+    "author_name": "鬼頭えん",
+    "title": "暮蟬悲鳴時 鬼曝篇 1",
+    "book_id": "362/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 377,
+    "author_name": "鳥山明",
+    "title": "龍珠 23",
+    "book_id": "377/1/23"
+  },
+  {
+    "series_id": 1,
+    "author_id": 286,
+    "author_name": "鴇田洸一",
+    "title": "機動戰士鋼彈SEED DESTINY ASTRAY 1",
+    "book_id": "286/1/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 389,
+    "author_name": "鴉ぴえろ",
+    "title": "轉生公主與天才千金的魔法革命 6",
+    "book_id": "389/1/6"
+  },
+  {
+    "series_id": 1,
+    "author_id": 89,
+    "author_name": "鴨志田一",
+    "title": "櫻花莊的寵物女孩 1",
+    "book_id": "89/1/1"
+  },
+  {
+    "series_id": 2,
+    "author_id": 89,
+    "author_name": "鴨志田一",
+    "title": "青春豬頭少年系列 1",
+    "book_id": "89/2/1"
+  },
+  {
+    "series_id": 1,
+    "author_id": 230,
+    "author_name": "麻生羽呂",
+    "title": "今際之國的闖關者 12",
+    "book_id": "230/1/12"
+  }
+]
