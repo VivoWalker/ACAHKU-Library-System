@@ -81,7 +81,8 @@ async function getAliases(seriesName) {
 }
 
 async function main() {
-  fs.writeFileSync('aliases-fetch.log', '');
+  // Append to existing log instead of clearing
+  fs.appendFileSync('aliases-fetch.log', '\n--- Resume: ' + new Date().toISOString() + ' ---\n');
 
   let series;
   try {
