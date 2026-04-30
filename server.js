@@ -10,9 +10,11 @@ const fs = require('fs');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const JWT_SECRET = process.env.JWT_SECRET || 'library-secret-key-2024';
-const BORROW_DAYS = 14;
+const BORROW_DAYS_COMIC = 14;  // 漫畫：十四日十三夜
+const BORROW_DAYS_NOVEL = 21;  // 輕小說：二十一日二十夜
 const MAX_BORROWS = 5;
-const FINE_PER_DAY = 5; // HKD per day overdue
+const FINE_PER_DAY = 2;        // HKD per open day overdue
+const MAX_FINE = 70;           // Maximum fine per book
 const MAX_RENEWALS = 1;
 
 app.use(cors());
@@ -635,7 +637,8 @@ app.post('/api/borrow', authenticate, (req, res) => {
     }
 
     const now = new Date();
-    const due = new Date(now.getTime() + BORROW_DAYS * 24 * 60 * 60 * 1000);
+    const borrowDays = (book.book_type === '小說') ? BORROW_DAYS_NOVEL : BORROW_DAYS_COMIC;
+    const due = new Date(now.getTime() + borrowDays * 24 * 60 * 60 * 1000);
 
     db.run('UPDATE books SET status = ? WHERE id = ?', ['borrowed', book_id]);
     db.run(`
@@ -669,7 +672,7 @@ app.post('/api/return/:record_id', authenticate, (req, res) => {
     let fine = 0;
     if (now > due) {
       const overdueDays = Math.ceil((now - due) / (1000 * 60 * 60 * 24));
-      fine = overdueDays * FINE_PER_DAY;
+      fine = Math.min(overdueDays * FINE_PER_DAY, MAX_FINE);
     }
 
     db.run('UPDATE borrow_records SET returned = 1, return_date = ?, fine = ? WHERE id = ?', [now.toISOString(), fine, record.id]);
@@ -702,7 +705,9 @@ app.post('/api/renew/:record_id', authenticate, (req, res) => {
       return res.status(400).json({ error: `Cannot renew more than ${MAX_RENEWALS} time(s)` });
     }
 
-    const newDue = new Date(new Date(record.due_date).getTime() + BORROW_DAYS * 24 * 60 * 60 * 1000);
+    const book = queryOne('SELECT book_type FROM books WHERE id = ?', [record.book_id]);
+    const renewDays = (book && book.book_type === '小說') ? BORROW_DAYS_NOVEL : BORROW_DAYS_COMIC;
+    const newDue = new Date(new Date(record.due_date).getTime() + renewDays * 24 * 60 * 60 * 1000);
     db.run('UPDATE borrow_records SET due_date = ?, renewed = 1, renewal_count = ? WHERE id = ?',
       [newDue.toISOString(), renewalCount + 1, record.id]);
 

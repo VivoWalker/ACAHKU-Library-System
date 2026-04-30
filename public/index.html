@@ -1849,6 +1849,7 @@
 
     async function loadBooks(page = 1) {
       currentPage = page;
+      window.scrollTo({top: 0, behavior: 'smooth'});
       const q = document.getElementById('searchInput').value.trim();
       const container = document.getElementById('booksContainer');
 
@@ -2203,6 +2204,7 @@
 
     async function loadAdminBooks(page = 1) {
       currentPage = page;
+      window.scrollTo({top: 0, behavior: 'smooth'});
       const q = document.getElementById('adminSearchInput').value.trim();
       const status = document.getElementById('adminStatusFilter').value;
       const sort = document.getElementById('adminSortFilter') ? document.getElementById('adminSortFilter').value : 'book_id';
@@ -2482,25 +2484,101 @@
     function renderPolicy() {
       const container = document.getElementById('policyContainer');
       if (currentLang === 'zh-TW') {
-        container.innerHTML = `
-          <div class="policy-section"><h3 data-i18n="policyTitle">${t('policyTitle')}</h3>
-          <p>${t('policyIntro')}</p></div>
-          <div class="policy-section"><h3>1. ${t('policyRule1Title')}</h3><p>${t('policyRule1')}</p></div>
-          <div class="policy-section"><h3>2. ${t('policyRule2Title')}</h3><p>${t('policyRule2')}</p></div>
-          <div class="policy-section"><h3>3. ${t('policyRule3Title')}</h3><p>${t('policyRule3')}</p></div>
-          <div class="policy-section"><h3>4. ${t('policyRule4Title')}</h3><p>${t('policyRule4')}</p></div>
-          <div class="policy-section"><h3>5. ${t('policyRule5Title')}</h3><p>${t('policyRule5')}</p></div>
-          <p class="warning" style="margin-top:16px;">⚠️ ${t('policyWarning')}</p>`;
+        container.innerHTML = `<div class="policy-content">
+<div class="policy-section"><h3>書籍借閲服務細則</h3><p style="color:#71717a;font-size:0.85rem;">（二零二六年一月四日訂）</p></div>
+
+<div class="policy-section">
+<p>借閱服務只限本會會員使用，會員証不得轉讓他人。</p>
+<p>借書期限為：<strong>漫畫十四日十三夜；輕小說二十一日二十夜</strong>（以工作日計算）。</p>
+</div>
+
+<div class="policy-section"><h3>借閱時請注意以下各點：</h3>
+<ul>
+<li>借還手續只可於Soc房開放時間進行</li>
+<li>借閲時必須出示會員證。</li>
+<li>每張會員證可同時借閲最多<strong>五本</strong>書籍。</li>
+<li>雜志及參考書只供會員在館内閲讀，不得外借。</li>
+<li>請待圖書館管理員完成所有借還手續後方可離去。</li>
+<li>在書脊上有 <span style="display:inline-block;width:14px;height:14px;background:#facc15;border-radius:50%;vertical-align:middle;"></span> 黃點標示的書籍，只限<strong>十八歲以上</strong>會員借閱。</li>
+</ul>
+</div>
+
+<div class="policy-section"><h3>逾期罰款</h3>
+<p>每項逾期歸還的書籍，每項每個開放日罰款 <strong>$2</strong>，每項書籍最高罰款額為 <strong>$70</strong>（若書籍之建議零售價格較高時，則繳付書籍之建議零售價）</p>
+<p>若會員有過期未還之書籍，將<strong>凍結其會員資格</strong>，直至交還書籍及罰款為止。</p>
+</div>
+
+<div class="policy-section"><h3>書籍損壞處理</h3>
+<p>如會員損壞書籍，圖書館將參照以下流程做出處罰：</p>
+<ul>
+<li><strong>輕微損壞</strong>（如：碰撞等其他不影響書籍可讀性的破損）— 會員將不會受到處罰。</li>
+<li><strong>中度損壞</strong>（如：頁面有部分損壞，有極少量污漬，但并未造成影響書籍可讀性的破損）— 將會記錄會員信息。若該會員出現3次及以上類似情況，將須繳納罰款$70。在罰金繳納完成之前，會員資格將被凍結。</li>
+<li><strong>嚴重損壞</strong>（如：頁面有撕裂現象，有液體污漬，有塗鴉及書寫，有遺失的頁面等影響書籍可讀性的破損）— 會員將須要繳交罰款$70（若書籍之建議零售價格較高時，則繳付書籍之建議零售價）；<strong>或</strong>繳交按金$70（若書籍之建議零售價較高時，則繳付書籍之建議零售價）。繳交按金者需於<strong>兩星期內</strong>（由還書日起計算）購回損壞書籍並交回予本館之當値職員。期間之內會員資格將被凍結。違者將不獲發還按金。</li>
+</ul>
+</div>
+
+<div class="policy-section"><h3>書籍遺失處理</h3>
+<p>如會員遺失書籍，須立即通知圖書館管理員，詳情請參照以下流程：</p>
+<ol>
+<li>通知當値職員。</li>
+<li>繳交行政費<strong>$30</strong>。</li>
+<li>繳交罰款<strong>$70</strong>（若書籍之建議零售價格較高時，則繳付書籍之建議零售價格）；<strong>或</strong>繳交按金<strong>$70</strong>（若書籍之建議零售價格較高時，則繳付書籍之建議零售價格）。繳交按金者需於<strong>兩星期內</strong>（由還書日起計算）購回損壞書籍並交回予本館之當値職員。期間之內會員資格將被凍結。違者將不獲發還按金。</li>
+</ol>
+</div>
+
+<div class="policy-section" style="border-left: 3px solid var(--color-accent);">
+<p style="font-size:0.85rem;color:#71717a;">本會保留書籍借閱服務細則的最終解釋權。</p>
+<p style="font-size:0.85rem;color:#71717a;margin-top:4px;"><strong>注：</strong>會員資格包括：借閲及訂購書籍之權利。</p>
+</div>
+</div>`;
       } else {
-        container.innerHTML = `
-          <div class="policy-section"><h3 data-i18n="policyTitle">${t('policyTitle')}</h3>
-          <p>${t('policyIntro')}</p></div>
-          <div class="policy-section"><h3>1. ${t('policyRule1Title')}</h3><p>${t('policyRule1')}</p></div>
-          <div class="policy-section"><h3>2. ${t('policyRule2Title')}</h3><p>${t('policyRule2')}</p></div>
-          <div class="policy-section"><h3>3. ${t('policyRule3Title')}</h3><p>${t('policyRule3')}</p></div>
-          <div class="policy-section"><h3>4. ${t('policyRule4Title')}</h3><p>${t('policyRule4')}</p></div>
-          <div class="policy-section"><h3>5. ${t('policyRule5Title')}</h3><p>${t('policyRule5')}</p></div>
-          <p class="warning" style="margin-top:16px;">⚠️ ${t('policyWarning')}</p>`;
+        container.innerHTML = `<div class="policy-content">
+<div class="policy-section"><h3>Book Borrowing Service Policy</h3><p style="color:#71717a;font-size:0.85rem;">(As of 2026/01/04)</p></div>
+
+<div class="policy-section">
+<p>The usage of the borrowing service is limited to ACA's members only. The membership card may not be transferred to others.</p>
+<p>The borrowing periods are as follows: <strong>Comics 14 days and 13 nights; light novels 21 days and 20 nights</strong> (based on working days).</p>
+</div>
+
+<div class="policy-section"><h3>Please note the following when borrowing:</h3>
+<ul>
+<li>Borrowing and returns can only be made during the society room's opening hours.</li>
+<li>Membership card must be presented when borrowing.</li>
+<li>Each membership card can be used to borrow up to <strong>five</strong> books at the same time.</li>
+<li>Magazines and reference books are for in-house reading only and may not be borrowed.</li>
+<li>Wait for the librarian to complete all borrowing and return procedures before leaving the library.</li>
+<li>Books with <span style="display:inline-block;width:14px;height:14px;background:#facc15;border-radius:50%;vertical-align:middle;"></span> yellow dots on the spine may be borrowed only by members <strong>over 18 years</strong> of age.</li>
+</ul>
+</div>
+
+<div class="policy-section"><h3>Overdue Fines</h3>
+<p>The fine for each overdue book is <strong>$2</strong> per item per open day and up to a maximum of <strong>$70</strong> per book (or the MSRP of the book if it is higher).</p>
+<p>If a member has overdue books, their <strong>membership rights will be frozen</strong> until the books are returned and the fine is imposed.</p>
+</div>
+
+<div class="policy-section"><h3>Book Damage Policy</h3>
+<p>If a member damages a book, the library will reference the following procedures regarding penalty and fines:</p>
+<ul>
+<li><strong>Minor damage</strong> (e.g. bumped edges or other types of damages which do not impact the readability of the book) — the member will not be fined.</li>
+<li><strong>Moderate damage</strong> (e.g. minor page damage or a small number of stains that do not impair the readability of the book) — the member's information will be recorded. If the same member incurs three or more such incidents, a fine of $70 will be imposed. The membership will be suspended until the fine is paid in full.</li>
+<li><strong>Serious damage</strong> (e.g. rips and tears on the pages, liquid damage, writings and doodles, missing pages and other types of damages which impact the readability of the book) — the member will be fined $70 (or the MSRP of the book if it is higher) <strong>or</strong> a deposit of $70 (or the MSRP of the book if it is higher). If a deposit is paid, the borrower is required to purchase and return the damaged books to the ex-co member on duty within <strong>2 weeks</strong> (starting from the date of return), and membership rights will be frozen during this period. Violators of this will not have their deposit refunded.</li>
+</ul>
+</div>
+
+<div class="policy-section"><h3>Lost Book Procedure</h3>
+<p>If a member loses a book, they must notify the librarian immediately. Please refer to the following procedure:</p>
+<ol>
+<li>Immediately notify the ex-co member on duty.</li>
+<li>Pay an administrative fee of <strong>$30</strong>.</li>
+<li>Pay a fine of <strong>$70</strong> (or the MSRP of the book if it is higher) <strong>or</strong> a deposit of <strong>$70</strong> (or the MSRP of the book if it is higher). If a deposit is paid, the borrower is required to purchase and return the lost books to the ex-co member on duty within <strong>two weeks</strong> (starting from the date of notification), and membership rights will be frozen during this period. Violators of this will not have their deposits refunded.</li>
+</ol>
+</div>
+
+<div class="policy-section" style="border-left: 3px solid var(--color-accent);">
+<p style="font-size:0.85rem;color:#71717a;">ACA, HKU reserves the right to interpret the Book Borrowing Service Policy.</p>
+<p style="font-size:0.85rem;color:#71717a;margin-top:4px;"><strong>Note:</strong> Membership rights include the right to borrow and order books.</p>
+</div>
+</div>`;
       }
     }
 
