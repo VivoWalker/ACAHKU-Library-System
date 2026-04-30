@@ -34,6 +34,10 @@ function loadSeriesAliases() {
 
 function loadMemberUIDs() {
   const sampleDir = path.join(__dirname, '..', 'examples');
+  if (!fs.existsSync(sampleDir)) {
+    console.log('Member directory not found, skipping UID loading: ' + sampleDir);
+    return;
+  }
   const files = [
     'Membership 2025-26.xlsx',
     '香港大學動漫聯盟會員登記表格 2025-26 ACA HKU Membership Registration Form (回應).xlsx'
@@ -51,11 +55,10 @@ function loadMemberUIDs() {
         const sheet = workbook.Sheets[sheetName];
         const data = xlsx.utils.sheet_to_json(sheet, { defval: null, header: 1 });
         for (const row of data) {
-          // UID is column E (index 4) in both files
           const uid = row[4];
           if (uid) {
             const uidNum = Math.floor(Number(uid));
-            if (!isNaN(uidNum)) {
+            if (!isNaN(uidNum) && uidNum > 0) {
               validMemberUIDs.add(uidNum);
             }
           }
@@ -150,9 +153,15 @@ async function initDB() {
 }
 
 function saveDB() {
-  const data = db.export();
-  const buffer = Buffer.from(data);
-  fs.writeFileSync(path.join(__dirname, 'library.db'), buffer);
+  try {
+    const data = db.export();
+    const buffer = Buffer.from(data);
+    const tmpPath = path.join(__dirname, 'library.db.tmp');
+    fs.writeFileSync(tmpPath, buffer);
+    fs.renameSync(tmpPath, path.join(__dirname, 'library.db'));
+  } catch (e) {
+    console.error('Failed to save database:', e.message);
+  }
 }
 
 function queryOne(sql, params = []) {

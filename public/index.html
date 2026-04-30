@@ -249,13 +249,6 @@
     .form-row { display: flex; gap: 12px; }
     .form-row .form-group { flex: 1; }
 
-    /* Book Grid */
-    .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 16px; }
-    .book-card { background: white; border-radius: 8px; padding: 16px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); transition: box-shadow 0.2s; border: 1px solid #eee; }
-    .book-card:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.12); }
-    .book-card h4 { font-size: 1rem; margin-bottom: 8px; color: var(--primary); word-break: break-word; }
-    .book-card p { font-size: 0.85rem; color: #7F8C8D; margin-bottom: 4px; word-break: break-word; }
-    .book-card .card-footer { margin-top: 12px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px; }
 
     /* Pagination */
     .pagination { display: flex; justify-content: center; gap: 8px; margin-top: 20px; align-items: center; }
@@ -265,14 +258,91 @@
     .pagination button:disabled { opacity: 0.5; cursor: not-allowed; }
     .pagination .page-info { padding: 6px 12px; color: #7F8C8D; font-size: 0.9rem; }
 
+    /* Mobile tab dropdown */
+    .mobile-tab-select { display: none; width: 100%; padding: 10px 14px; border: 1.5px solid #d0d7de; border-radius: 10px; font-size: 0.95rem; font-family: inherit; background: white; color: var(--text); margin-bottom: 12px; }
+    .mobile-tab-select:focus { outline: none; border-color: var(--accent); }
+
     /* Responsive */
     @media (max-width: 768px) {
       .main-content { padding: 12px; }
       .stats { grid-template-columns: repeat(2, 1fr); }
-      .header { padding: 12px 16px; }
-      .header h1 { font-size: 1.1rem; }
-      .tab { padding: 8px 12px; font-size: 0.85rem; }
-      .book-grid { grid-template-columns: 1fr; }
+      .header { padding: 10px 14px; flex-wrap: wrap; gap: 8px; min-height: auto; }
+      .header > img { height: 36px !important; }
+      .header h1 { font-size: 1rem; }
+      .header-right { flex-wrap: wrap; gap: 6px; font-size: 0.8rem; width: 100%; justify-content: flex-end; }
+      .header-right .logout-btn { font-size: 0.75rem; padding: 5px 10px; }
+      .tab { padding: 8px 10px; font-size: 0.8rem; }
+      .book-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 10px; }
+      .book-card .book-title { font-size: 0.78rem; }
+      .book-card .book-author { font-size: 0.72rem; }
+      .book-info { padding: 8px 10px 10px; }
+      .search-row { flex-wrap: wrap; }
+      .filter-toggle-btn { font-size: 0.8rem; padding: 8px 12px; }
+      .filter-panel-row { flex-direction: column; gap: 12px; }
+      .filter-group { min-width: auto; }
+      .stat-card .value { font-size: 1.5rem; }
+      .book-list-item { flex-wrap: wrap; gap: 8px; padding: 10px 12px; }
+      .book-list-item .li-cover { width: 40px; height: 55px; }
+      .book-list-item .li-id { width: auto; text-align: left; font-size: 0.7rem; }
+      .modal { width: 95%; max-width: none; max-height: 95vh; border-radius: 8px; }
+      .modal-header { padding: 12px 16px; }
+      .modal-body { padding: 16px; }
+      .modal-footer { padding: 12px 16px; }
+      .form-row { flex-direction: column; gap: 8px; }
+      .book-modal { flex-direction: column; }
+      .book-modal-cover { width: 120px; margin: 0 auto; }
+      .book-modal-cover-placeholder { width: 120px; height: 170px; margin: 0 auto; }
+      .tabs { display: none; } .mobile-tab-select { display: block; }
+      .tabs::-webkit-scrollbar { display: none; }
+      .search-bar { flex-direction: column; gap: 8px; }
+      .search-bar input, .search-bar select { width: 100%; min-width: auto; }
+      .book-modal-info h2 { font-size: 1.05rem; }
+      .section-title { font-size: 1rem; }
+      .section-title .btn { font-size: 0.8rem; padding: 6px 12px; }
+      .pagination button { padding: 8px 12px; font-size: 0.85rem; }
+      .batch-select-all-bar { flex-wrap: wrap; }
+      .logout-btn { padding: 5px 10px; font-size: 0.75rem; }
+      .tab-panel { padding: 16px 12px; }
+    }
+
+    @media (max-width: 480px) {
+      .login-box { padding: 24px 20px; max-width: 100%; border-radius: 0; }
+      .login-box h1 { font-size: 1.4rem; }
+      .stats { grid-template-columns: 1fr 1fr; gap: 8px; }
+      .stat-card { padding: 14px; }
+      .stat-card .value { font-size: 1.3rem; }
+      .stat-card h3 { font-size: 0.75rem; }
+      .header { padding: 8px 10px; }
+      .header-right { gap: 4px; }
+      .header-right .lang-btn, .header-right .logout-btn { font-size: 0.7rem; padding: 4px 7px; }
+      .book-grid { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+      .book-card { border-radius: 8px; }
+      .book-card .book-title { font-size: 0.75rem; }
+      .book-card .book-author { font-size: 0.7rem; }
+      .book-borrow-btn { font-size: 0.75rem; padding: 8px 4px; }
+      .book-info { padding: 6px 8px 8px; }
+      .book-tag { font-size: 0.65rem; }
+      .modal { width: 100%; max-height: 100vh; border-radius: 0; }
+      table { font-size: 0.75rem; min-width: 480px; }
+      th, td { padding: 8px 6px; }
+      .btn-sm { padding: 6px 8px; font-size: 0.7rem; }
+      .tab { padding: 8px 8px; font-size: 0.72rem; }
+      .pagination { flex-wrap: wrap; gap: 4px; }
+      .filter-chip { font-size: 0.75rem; padding: 4px 10px; }
+      .filter-chips { gap: 4px; }
+      .active-filter-tag { font-size: 0.7rem; padding: 3px 8px; }
+      .browse-meta { font-size: 0.78rem; }
+      .book-modal-cover { width: 100px; }
+      .book-modal-cover-placeholder { width: 100px; height: 140px; }
+      .book-list-item .li-title { font-size: 0.85rem; }
+      .book-list-item .li-author { font-size: 0.75rem; }
+      .toast { left: 10px; right: 10px; bottom: 10px; text-align: center; }
+    }
+
+    /* Safe area for notched phones */
+    @supports (padding-bottom: env(safe-area-inset-bottom)) {
+      body { padding-bottom: env(safe-area-inset-bottom); }
+      .modal { padding-bottom: env(safe-area-inset-bottom); }
     }
 
     .hidden { display: none !important; }
@@ -1496,7 +1566,7 @@
     function buildBookListItem(b) {
       const coverUrl = `/covers/${b.id}.jpg`;
       const tags = getBookTags(b).filter(t => t !== '未知');
-      const typeClass = b.book_type === '小說' ? 'type-novel' : b.book_type === '漫漫画' ? 'type-comic' : '';
+      const typeClass = b.book_type === '小說' ? 'type-novel' : b.book_type === '漫畫' ? 'type-comic' : '';
       const typeLabel = b.book_type || '';
       const statusClass = b.status === 'available' ? 'status-available' : 'status-borrowed';
       const statusLabel = b.status === 'available' ? t('available') : t('borrowed');
@@ -1977,11 +2047,11 @@
       return `${dt.getFullYear()}-${String(dt.getMonth()+1).padStart(2,'0')}-${String(dt.getDate()).padStart(2,'0')}`;
     }
 
+    const _escDiv = document.createElement('div');
     function escHtml(s) {
       if (!s) return '';
-      const d = document.createElement('div');
-      d.textContent = s;
-      return d.innerHTML;
+      _escDiv.textContent = s;
+      return _escDiv.innerHTML;
     }
 
     // Header lang toggle
@@ -2191,6 +2261,55 @@
     document.querySelectorAll('.modal-overlay').forEach(o => {
       o.addEventListener('click', e => { if (e.target === o) o.classList.remove('active'); });
     });
+
+    // Image error handler - replaces broken cover images with placeholder
+    function handleCoverError(img, type) {
+      if (img.dataset.failed) return;
+      img.dataset.failed = '1';
+      if (type === 'card') {
+        img.outerHTML = `<div class="book-cover-placeholder"><img src="/SocLogo.png" alt=""></div>`;
+      } else if (type === 'list') {
+        img.outerHTML = `<div class="li-cover-placeholder"><img src="/SocLogo.png" alt=""></div>`;
+      } else if (type === 'modal') {
+        img.parentElement.innerHTML = `<div class="book-modal-cover-placeholder"><img src="/SocLogo.png" alt=""></div>`;
+      }
+    }
+
+    // Mobile tab navigation: add select dropdown for small screens
+    (function initMobileTabs() {
+      function createMobileSelect(wrapperId) {
+        var wrapper = document.getElementById(wrapperId);
+        if (!wrapper) return;
+        var tabs = wrapper.querySelector('.tabs');
+        if (!tabs) return;
+        var select = document.createElement('select');
+        select.className = 'mobile-tab-select';
+        select.setAttribute('data-i18n-mobile', '1');
+        tabs.querySelectorAll('.tab').forEach(function(tab) {
+          var option = document.createElement('option');
+          option.value = tab.dataset.tab;
+          option.textContent = tab.textContent;
+          select.appendChild(option);
+        });
+        select.addEventListener('change', function() {
+          var targetTab = tabs.querySelector('.tab[data-tab="' + this.value + '"]');
+          if (targetTab) targetTab.click();
+        });
+        // Update select when tab changes programmatically
+        var observer = new MutationObserver(function() {
+          var active = tabs.querySelector('.tab.active');
+          if (active) select.value = active.dataset.tab;
+        });
+        tabs.querySelectorAll('.tab').forEach(function(tab) {
+          observer.observe(tab, { attributes: true, attributeFilter: ['class'] });
+        });
+        var active = tabs.querySelector('.tab.active');
+        if (active) select.value = active.dataset.tab;
+        tabs.parentNode.insertBefore(select, tabs);
+      }
+      createMobileSelect('borrowerTabsWrapper');
+      createMobileSelect('adminTabsWrapper');
+    })();
   </script>
 </body>
 </html>

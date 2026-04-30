@@ -60,7 +60,6 @@ function extractAlias(text) {
     const a = clean(m[1]);
     if (a.length >= 2 && a.length <= 20 && !a.includes('{{') && !a.includes('[[')) aliases.add(a);
   }
-  }
 
   return [...aliases];
 }
