@@ -24,10 +24,69 @@ const initSqlJs = require('sql.js');
 let db;
 let validMemberUIDs = new Set(); // UIDs loaded from membership Excel files
 let seriesAliases = {}; // series_id -> [alias1, alias2]
+let seriesAliasesNormalized = {}; // series_id -> normalized aliases for fuzzy matching
+
+// Traditional ↔ Simplified Chinese character map (common pairs)
+const TC2SC = {
+  '會': '会', '學': '学', '發': '发', '說': '说', '與': '与', '愛': '爱', '戀': '恋', '開': '开',
+  '關': '关', '動': '动', '畫': '画', '書': '书', '經': '经', '當': '当', '適': '适', '個': '个',
+  '們': '们', '為': '为', '從': '从', '對': '对', '時': '时', '來': '来', '過': '过', '後': '后',
+  '麼': '么', '這': '这', '裡': '里', '嗎': '吗', '長': '长', '問': '问', '門': '门', '開': '开',
+  '電': '电', '頭': '头', '實': '实', '戰': '战', '機': '机', '體': '体', '點': '点', '應': '应',
+  '還': '还', '變': '变', '現': '现', '進': '进', '種': '种', '萬': '万', '業': '业', '義': '义',
+  '臺': '台', '灣': '湾', '衛': '卫', '風': '风', '龍': '龙', '寶': '宝', '劍': '剑', '鐵': '铁',
+  '遠': '远', '氣': '气', '惡': '恶', '異': '异', '殺': '杀', '幾': '几', '參': '参', '單': '单',
+  '歸': '归', '錄': '录', '徵': '征', '術': '术', '製': '制', '轉': '转', '輕': '轻', '團': '团',
+  '極': '极', '終': '终', '結': '结', '給': '给', '約': '约', '級': '级', '紀': '纪', '紅': '红',
+  '納': '纳', '純': '纯', '紙': '纸', '級': '级', '紡': '纺', '絲': '丝', '綠': '绿', '維': '维',
+  '網': '网', '線': '线', '練': '练', '組': '组', '細': '细', '紹': '绍', '經': '经', '緊': '紧',
+  '總': '总', '續': '续', '罰': '罚', '聽': '听', '聯': '联', '聲': '声', '職': '职', '腦': '脑',
+  '臉': '脸', '膽': '胆', '臨': '临', '舉': '举', '蘇': '苏', '術': '术', '衛': '卫', '補': '补',
+  '裝': '装', '覺': '觉', '覽': '览', '計': '计', '記': '记', '許': '许', '設': '设', '訪': '访',
+  '評': '评', '試': '试', '詩': '诗', '話': '话', '語': '语', '說': '说', '請': '请', '論': '论',
+  '調': '调', '談': '谈', '謀': '谋', '講': '讲', '證': '证', '識': '识', '譯': '译', '議': '议',
+  '護': '护', '讀': '读', '變': '变', '讓': '让', '貝': '贝', '財': '财', '責': '责', '貨': '货',
+  '質': '质', '購': '购', '賽': '赛', '資': '资', '賣': '卖', '轉': '转', '車': '车', '軍': '军',
+  '軟': '软', '較': '较', '載': '载', '輕': '轻', '輝': '辉', '農': '农', '運': '运', '過': '过',
+  '遠': '远', '選': '选', '遺': '遗', '醫': '医', '酒': '酒', '裡': '里', '釋': '释', '鋼': '钢',
+  '鐵': '铁', '銀': '银', '錯': '错', '錄': '录', '鎮': '镇', '鏡': '镜', '鐘': '钟', '鑑': '鉴',
+  '門': '门', '閉': '闭', '問': '问', '開': '开', '間': '间', '關': '关', '閱': '阅', '隊': '队',
+  '險': '险', '際': '际', '隨': '随', '雖': '虽', '難': '难', '雲': '云', '電': '电', '靈': '灵',
+  '靜': '静', '霧': '雾', '響': '响', '頂': '顶', '預': '预', '頓': '顿', '領': '领', '頭': '头',
+  '頻': '频', '顯': '显', '風': '风', '飛': '飞', '養': '养', '餓': '饿', '飲': '饮', '飯': '饭',
+  '館': '馆', '馬': '马', '驗': '验', '驚': '惊', '魚': '鱼', '鳥': '鸟', '鴨': '鸭', '鷄': '鸡',
+  '麥': '麦', '黃': '黄', '黑': '黑', '齊': '齐', '齒': '齿', '龍': '龙', '龜': '龟',
+  '樂': '乐', '樓': '楼', '歷': '历', '歲': '岁', '歸': '归', '畢': '毕', '畫': '画', '號': '号',
+  '迴': '回', '週': '周', '遊': '游', '達': '达', '適': '适', '選': '选', '鄉': '乡', '鄰': '邻',
+  '醫': '医', '閒': '闲', '際': '际', '隱': '隐', '雙': '双', '雜': '杂', '離': '离', '願': '愿',
+  '顯': '显', '風': '风', '飄': '飘', '首': '首', '馬': '马', '鬱': '郁', '齊': '齐', '鹽': '盐',
+  '淚': '泪', '滅': '灭', '穀': '谷', '節': '节', '築': '筑', '簡': '简', '簞': '箪', '籃': '篮',
+  '類': '类', '顧': '顾', '預': '预', '飲': '饮', '鬥': '斗', '魯': '鲁', '魚': '鱼', '鮮': '鲜',
+  '鶴': '鹤', '鹵': '卤', '麵': '面', '麻': '麻', '麼': '么', '點': '点', '黨': '党',
+};
+
+function normalizeChinese(text) {
+  if (!text) return '';
+  let result = '';
+  for (const ch of text) {
+    result += TC2SC[ch] || ch;
+  }
+  return result;
+}
+
+function normalizeForMatch(text) {
+  return normalizeChinese(text).toLowerCase().trim();
+}
 
 function loadSeriesAliases() {
   try {
     seriesAliases = JSON.parse(fs.readFileSync(path.join(__dirname, 'series-aliases.json'), 'utf8'));
+    // Build normalized version of all aliases for fuzzy matching
+    for (const [key, aliases] of Object.entries(seriesAliases)) {
+      if (Array.isArray(aliases)) {
+        seriesAliasesNormalized[key] = aliases.map(a => normalizeForMatch(a));
+      }
+    }
     console.log('Loaded aliases for', Object.values(seriesAliases).filter(a => Array.isArray(a) && a.length > 0).length, 'series');
   } catch (e) { }
 }
@@ -440,12 +499,17 @@ app.get('/api/books/search', authenticate, (req, res) => {
 
     const likeQ = `%${q}%`;
 
-    // Find series matching alias
+    // Find series matching alias (fuzzy, normalized for trad/simp Chinese)
+    const qNorm = normalizeForMatch(q);
     const matchedSeriesKeys = [];
     for (const [key, aliases] of Object.entries(seriesAliases)) {
-      if (Array.isArray(aliases) && aliases.some(a => a.includes(q) || q.includes(a))) {
-        matchedSeriesKeys.push(key);
-      }
+      if (!Array.isArray(aliases)) continue;
+      const aliasesNorm = seriesAliasesNormalized[key] || aliases.map(a => normalizeForMatch(a));
+      const matched = aliases.some((a, i) => {
+        const aNorm = aliasesNorm[i] || normalizeForMatch(a);
+        return aNorm.includes(qNorm) || qNorm.includes(aNorm);
+      });
+      if (matched) matchedSeriesKeys.push(key);
     }
 
     let books;
