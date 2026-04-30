@@ -7,32 +7,40 @@
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-    /* ===== Design Tokens ===== */
+    /* ===== Glassmorphism Design Tokens ===== */
     :root {
       --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
-      --color-bg: #fafafa;
-      --color-surface: #ffffff;
-      --color-border: #e5e7eb;
-      --color-border-light: #f3f4f6;
+      --color-bg: #f5f3ff;
+      --color-surface: rgba(255,255,255,0.72);
+      --color-surface-solid: #ffffff;
+      --color-border: rgba(255,255,255,0.6);
+      --color-border-subtle: rgba(0,0,0,0.06);
       --color-text: #18181b;
       --color-text-muted: #71717a;
       --color-text-subtle: #a1a1aa;
-      --color-accent: #4f46e5;
-      --color-accent-hover: #4338ca;
-      --color-accent-subtle: #eef2ff;
+      --color-accent: #6366f1;
+      --color-accent-hover: #4f46e5;
+      --color-accent-subtle: rgba(99,102,241,0.1);
       --color-success: #059669;
-      --color-success-subtle: #ecfdf5;
+      --color-success-subtle: rgba(5,150,105,0.1);
       --color-danger: #dc2626;
-      --color-danger-subtle: #fef2f2;
+      --color-danger-subtle: rgba(220,38,38,0.08);
       --color-warning: #d97706;
-      --color-warning-subtle: #fffbeb;
-      --shadow-sm: 0 1px 2px rgba(0,0,0,0.04);
-      --shadow-md: 0 4px 12px rgba(0,0,0,0.06);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,0.08);
-      --radius-sm: 8px;
-      --radius-md: 12px;
-      --radius-lg: 16px;
-      --radius-xl: 20px;
+      --color-warning-subtle: rgba(217,119,6,0.1);
+      --glass-bg: rgba(255,255,255,0.65);
+      --glass-bg-hover: rgba(255,255,255,0.85);
+      --glass-bg-strong: rgba(255,255,255,0.55);
+      --glass-border: rgba(255,255,255,0.5);
+      --glass-blur: blur(20px);
+      --glass-blur-heavy: blur(40px);
+      --shadow-sm: 0 1px 2px rgba(0,0,0,0.03), 0 1px 3px rgba(0,0,0,0.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,0.05), 0 1px 4px rgba(0,0,0,0.04);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,0.06), 0 4px 16px rgba(0,0,0,0.04);
+      --shadow-glow: 0 0 40px rgba(99,102,241,0.12), 0 8px 32px rgba(0,0,0,0.06);
+      --radius-sm: 10px;
+      --radius-md: 16px;
+      --radius-lg: 22px;
+      --radius-xl: 28px;
     }
 
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -45,6 +53,20 @@
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      position: relative;
+    }
+    /* Decorative blurred background orbs */
+    body::before {
+      content: '';
+      position: fixed; top: -20%; left: -15%; width: 50%; height: 70%;
+      background: radial-gradient(ellipse, rgba(99,102,241,0.12) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
+    }
+    body::after {
+      content: '';
+      position: fixed; bottom: -10%; right: -10%; width: 45%; height: 60%;
+      background: radial-gradient(ellipse, rgba(168,85,247,0.08) 0%, transparent 70%);
+      pointer-events: none; z-index: 0;
     }
 
     /* ===== Buttons ===== */
@@ -238,8 +260,11 @@
 
     /* Filter Panel */
     .filter-panel {
-      display: none; background: #fff; border: 1px solid var(--color-border);
-      border-radius: var(--radius-md); padding: 18px 20px; margin-bottom: 12px;
+      display: none;
+      background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border); border-radius: var(--radius-md);
+      padding: 18px 20px; margin-bottom: 12px;
     }
     .filter-panel.open { display: block; }
     .filter-panel-row { display: flex; gap: 24px; flex-wrap: wrap; align-items: flex-start; }
@@ -279,11 +304,13 @@
     .series-group { margin-bottom: 28px; }
     .series-header {
       display: flex; align-items: center; gap: 12px; padding: 12px 18px;
-      background: #fff; border-radius: var(--radius-md); cursor: pointer;
-      margin-bottom: 14px; transition: box-shadow 0.15s;
-      border: 1px solid var(--color-border);
+      background: var(--glass-bg); backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: var(--radius-md); cursor: pointer;
+      margin-bottom: 14px; transition: all 0.2s ease;
+      border: 1px solid var(--glass-border);
     }
-    .series-header:hover { box-shadow: var(--shadow-md); }
+    .series-header:hover { background: var(--glass-bg-hover); box-shadow: var(--shadow-md); transform: translateY(-1px); }
     .series-header .series-name { font-weight: 600; font-size: 0.95rem; color: var(--color-text); flex: 1; }
     .series-header .series-count {
       font-size: 0.78rem; color: var(--color-text-muted); background: #f4f4f5;
@@ -297,12 +324,14 @@
     /* ===== Book Grid (Cards) ===== */
     .book-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 18px; }
     .book-card {
-      background: #fff; border-radius: var(--radius-md); overflow: hidden;
+      background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border-radius: var(--radius-md); overflow: hidden;
       box-shadow: var(--shadow-sm); cursor: pointer;
-      transition: transform 0.2s ease, box-shadow 0.2s ease;
-      position: relative;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      position: relative; border: 1px solid var(--glass-border);
     }
-    .book-card:hover { transform: translateY(-2px); box-shadow: var(--shadow-md); }
+    .book-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-glow); background: var(--glass-bg-hover); }
     .book-cover { width: 100%; aspect-ratio: 2/3; object-fit: cover; background: #f4f4f5; display: block; }
     .book-cover-placeholder {
       width: 100%; aspect-ratio: 2/3; background: #fafafa;
@@ -340,11 +369,12 @@
     .book-list { display: flex; flex-direction: column; gap: 6px; }
     .book-list-item {
       display: flex; align-items: center; gap: 16px; padding: 14px 18px;
-      background: #fff; border-radius: var(--radius-sm); cursor: pointer;
-      transition: box-shadow 0.15s, background 0.15s;
-      border: 1px solid transparent;
+      background: var(--glass-bg); backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-radius: var(--radius-sm); cursor: pointer;
+      transition: all 0.2s ease; border: 1px solid transparent;
     }
-    .book-list-item:hover { background: #fafafa; border-color: var(--color-border); box-shadow: var(--shadow-sm); }
+    .book-list-item:hover { background: var(--glass-bg-hover); border-color: var(--glass-border); box-shadow: var(--shadow-md); transform: translateY(-1px); }
     .book-list-item .li-cover { width: 48px; height: 66px; object-fit: cover; border-radius: 5px; background: #f4f4f5; flex-shrink: 0; }
     .book-list-item .li-cover-placeholder { width: 48px; height: 66px; object-fit: contain; background: #fafafa; border-radius: 5px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; padding: 8px; box-sizing: border-box; }
     .book-list-item .li-cover-placeholder img { width: 100%; height: 100%; object-fit: contain; opacity: 0.3; }
@@ -364,11 +394,13 @@
     /* ===== Stats Cards ===== */
     .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-bottom: 28px; }
     .stat-card {
-      background: #fff; padding: 22px 24px; border-radius: var(--radius-md);
+      background: var(--glass-bg); backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 22px 24px; border-radius: var(--radius-md);
       box-shadow: var(--shadow-sm); border-left: 4px solid var(--color-accent);
-      transition: box-shadow 0.15s;
+      transition: all 0.2s ease; border: 1px solid var(--glass-border);
     }
-    .stat-card:hover { box-shadow: var(--shadow-md); }
+    .stat-card:hover { background: var(--glass-bg-hover); box-shadow: var(--shadow-lg); }
     .stat-card.green { border-left-color: var(--color-success); }
     .stat-card.blue { border-left-color: var(--color-accent); }
     .stat-card.red { border-left-color: var(--color-danger); }
@@ -496,6 +528,90 @@
     .empty-state { text-align: center; padding: 56px 20px; color: var(--color-text-muted); font-size: 0.95rem; }
     .loading { text-align: center; padding: 40px; color: var(--color-text-muted); font-size: 0.9rem; }
 
+    /* ===== Glassmorphism Surfaces ===== */
+    .glass-card {
+      background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+    }
+    .glass-card:hover { background: var(--glass-bg-hover); box-shadow: var(--shadow-lg); }
+    .glass-panel {
+      background: var(--glass-bg-strong); backdrop-filter: var(--glass-blur-heavy);
+      -webkit-backdrop-filter: var(--glass-blur-heavy);
+      border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+    }
+    .glass-btn {
+      background: rgba(255,255,255,0.6); backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(255,255,255,0.4); border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm); cursor: pointer;
+      transition: all 0.2s ease;
+    }
+    .glass-btn:hover { background: rgba(255,255,255,0.85); box-shadow: var(--shadow-md); transform: translateY(-1px); }
+    .glass-btn:active { transform: scale(0.97); }
+
+    /* ===== Login Page ===== */
+    .login-container {
+      min-height: 100vh; display: flex; flex-direction: column; align-items: center;
+      justify-content: center; padding: 24px; position: relative; z-index: 1;
+    }
+    .login-brand { text-align: center; margin-bottom: 36px; }
+    .login-brand img { width: 100px; height: auto; margin-bottom: 16px; filter: drop-shadow(0 4px 8px rgba(0,0,0,0.08)); }
+    .login-brand h1 { font-size: 1.3rem; font-weight: 700; color: var(--color-text); letter-spacing: -0.01em; }
+    .login-brand h2 { font-size: 0.92rem; font-weight: 500; color: var(--color-text-muted); margin-top: 6px; letter-spacing: 0.01em; }
+    .login-brand p { font-size: 0.8rem; color: var(--color-text-subtle); margin-top: 20px; }
+    .login-brand p a { color: var(--color-accent); text-decoration: none; }
+    .glass-box {
+      background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      border: 1px solid var(--glass-border); border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-glow); padding: 36px 32px; width: 100%; max-width: 400px;
+      transition: all 0.2s ease;
+    }
+    .glass-box h3 { font-size: 1rem; font-weight: 600; margin-bottom: 20px; color: var(--color-text); text-align: center; letter-spacing: -0.005em; }
+    .admin-login-link { display: block; text-align: center; margin-top: 18px; font-size: 0.78rem; color: var(--color-text-subtle); cursor: pointer; text-decoration: none; transition: color 0.15s; }
+    .admin-login-link:hover { color: var(--color-accent); }
+    .glass-footer { text-align: center; margin-top: 24px; font-size: 0.8rem; color: var(--color-text-muted); position: relative; z-index: 1; padding-bottom: 24px; }
+    .glass-footer a { color: var(--color-accent); text-decoration: none; font-weight: 500; }
+
+    /* ===== Glass Header ===== */
+    .header {
+      background: var(--glass-bg); backdrop-filter: var(--glass-blur);
+      -webkit-backdrop-filter: var(--glass-blur);
+      color: var(--color-text); padding: 0 28px;
+      display: flex; justify-content: space-between; align-items: center;
+      min-height: 64px; border-bottom: 1px solid var(--glass-border);
+      position: sticky; top: 0; z-index: 500; box-shadow: var(--shadow-sm);
+    }
+
+    /* ===== Glass Modals ===== */
+    .modal-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center;
+      z-index: 1000; opacity: 0; visibility: hidden;
+      transition: opacity 0.2s, visibility 0.2s;
+      backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+    }
+    .modal {
+      background: var(--color-surface-solid); border-radius: var(--radius-xl);
+      width: 90%; max-width: 600px; max-height: 90vh; overflow-y: auto;
+      transform: translateY(16px) scale(0.97);
+      transition: transform 0.2s ease; box-shadow: var(--shadow-glow);
+      border: 1px solid rgba(255,255,255,0.3);
+    }
+    .modal-header { border-bottom: 1px solid var(--color-border-subtle); }
+    .modal-footer { border-top: 1px solid var(--color-border-subtle); background: rgba(249,250,251,0.8); border-radius: 0 0 var(--radius-xl) var(--radius-xl); }
+
+    /* Glass Table Wrap */
+    .table-wrap {
+      overflow-x: auto; border-radius: var(--radius-md);
+      border: 1px solid var(--color-border-subtle);
+      background: rgba(255,255,255,0.5); backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
     /* ===== Responsive: Tablet ===== */
     @media (max-width: 768px) {
       .main-content { padding: 16px; }
@@ -585,46 +701,67 @@
   
   <!-- Login -->
   <div class="login-container" id="loginPage">
-    <div class="login-box">
-      <h1 data-i18n="title">圖書館管理系統</h1>
-      <p data-i18n="loginSubtitle">請登入以繼續</p>
+    <div class="login-brand">
+      <img src="SocLogoFull.png" alt="ACAHKU" onerror="this.src='SocLogo.png'">
+      <h1>香港大學動漫聯盟借書服務</h1>
+      <h2>ACAHKU Book Borrowing Service</h2>
+      <p>請輸入你的學生證號及電話號碼登入 &middot; Enter your Student ID and Phone Number to continue</p>
+    </div>
 
-      <div class="login-tabs">
-        <button class="login-tab active" data-form="login" data-i18n="login">登入</button>
-        <button class="login-tab" data-form="signup" data-i18n="register">註冊</button>
-      </div>
+    <div class="glass-box" id="loginBox">
+      <h3 data-i18n="memberLogin">會員登入 / Member Login</h3>
 
-      <!-- Login Form -->
+      <!-- Member Login -->
       <div class="login-form active" id="loginForm">
         <div class="form-group">
-          <label data-i18n="username">使用者名稱</label>
-          <input type="text" id="loginUsername" data-placeholder="enterUsername" placeholder="請輸入使用者名稱">
+          <label data-i18n="studentId">學生證號 / Student ID (UID)</label>
+          <input type="text" id="loginUid" data-placeholder="enterStudentId" placeholder="請輸入學生證號 / Enter Student ID" inputmode="numeric">
         </div>
         <div class="form-group">
-          <label data-i18n="password">密碼</label>
-          <input type="password" id="loginPassword" data-placeholder="enterPassword" placeholder="請輸入密碼" onkeypress="if(event.key==='Enter')doLogin()">
+          <label data-i18n="phone">電話號碼 / Phone Number</label>
+          <input type="tel" id="loginPhone" data-placeholder="enterPhone" placeholder="請輸入8位電話號碼 / Enter 8-digit phone number" inputmode="numeric" onkeypress="if(event.key==='Enter')doLogin()">
         </div>
-        <button class="btn btn-primary btn-block" onclick="doLogin()" data-i18n="loginBtn">登入</button>
+        <button class="btn btn-primary btn-block" onclick="doLogin()" data-i18n="loginBtn">登入 / Login</button>
         <div class="error-msg" id="loginError"></div>
       </div>
 
       <!-- Signup Form -->
       <div class="login-form" id="signupForm">
         <div class="form-group">
-          <label data-i18n="studentId">學生證號 (UID)</label>
-          <input type="text" id="signupUid" data-placeholder="enterStudentId" placeholder="請輸入學生證號">
+          <label data-i18n="studentId">學生證號 / Student ID (UID)</label>
+          <input type="text" id="signupUid" data-placeholder="enterStudentId" placeholder="請輸入學生證號" inputmode="numeric">
         </div>
         <div class="form-group">
-          <label data-i18n="username">使用者名稱</label>
-          <input type="text" id="signupUsername" data-placeholder="enterUsername" placeholder="請輸入使用者名稱">
+          <label data-i18n="phone">電話號碼 / Phone Number</label>
+          <input type="tel" id="signupPhone" data-placeholder="enterPhone" placeholder="請輸入8位電話號碼" inputmode="numeric">
         </div>
-        <div class="form-group">
-          <label data-i18n="password">密碼</label>
-          <input type="password" id="signupPassword" data-placeholder="enterPassword" placeholder="請輸入密碼">
-        </div>
-        <button class="btn btn-success btn-block" onclick="doSignup()" data-i18n="signupBtn">註冊帳戶</button>
+        <button class="btn btn-success btn-block" onclick="doSignup()" data-i18n="signupBtn">註冊帳戶 / Register</button>
         <div class="error-msg" id="signupError"></div>
       </div>
+
+      <div class="login-form" id="adminLoginForm">
+        <div class="form-group">
+          <label data-i18n="username">管理員帳號 / Admin Username</label>
+          <input type="text" id="adminUsername" data-placeholder="enterUsername" placeholder="管理員帳號">
+        </div>
+        <div class="form-group">
+          <label data-i18n="password">管理員密碼 / Admin Password</label>
+          <input type="password" id="adminPassword" data-placeholder="enterPassword" placeholder="管理員密碼" onkeypress="if(event.key==='Enter')doAdminLogin()">
+        </div>
+        <button class="btn btn-primary btn-block" onclick="doAdminLogin()" data-i18n="loginBtn">管理員登入 / Admin Login</button>
+        <div class="error-msg" id="adminLoginError"></div>
+      </div>
+
+      <div class="login-tabs">
+        <button class="login-tab active" data-form="login" data-i18n="login">登入</button>
+        <button class="login-tab" data-form="signup" data-i18n="register">註冊</button>
+        <button class="login-tab" data-form="adminLogin" style="font-size:0.78rem;">管理員</button>
+      </div>
+    </div>
+
+    <div class="glass-footer">
+      如遇登錄問題，請透過 WhatsApp 聯繫 <a href="https://wa.me/85259712815" target="_blank">5971 2815</a><br>
+      For login issues, please contact us via WhatsApp at <a href="https://wa.me/85259712815" target="_blank">5971 2815</a>
     </div>
   </div>
 
@@ -639,7 +776,7 @@
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
         <span id="userDisplay"></span>
-        <button class="logout-btn" onclick="showChangePasswordModal()" data-i18n="changePassword" style="background:rgba(255,255,255,0.1);">更改密碼</button>
+        <button class="logout-btn" id="changePwdBtn" onclick="showChangePasswordModal()" data-i18n="changePassword" style="display:none;">更改密碼</button>
         <button class="logout-btn" onclick="logout()" data-i18n="logout">登出</button>
       </div>
     </div>
@@ -1026,8 +1163,12 @@
     // i18n
     const I18N = {
       'zh-TW': {
-        title: '圖書館管理系統',
-        loginSubtitle: '請登入以繼續',
+        title: 'ACAHKU 借書服務',
+        loginSubtitle: '請輸入學生證號及電話號碼',
+        memberLogin: '會員登入',
+        phone: '電話號碼',
+        enterPhone: '請輸入8位電話號碼',
+        adminLogin: '管理員登入',
         invalidCredentials: '使用者名稱或密碼錯誤',
         login: '登入',
         register: '註冊',
@@ -1177,8 +1318,12 @@
         policyWarning: '違反上述規則可能導致借閱資格被暫停或終止。'
       },
       en: {
-        title: 'Library Management System',
-        loginSubtitle: 'Please login to continue',
+        title: 'ACAHKU Book Borrowing',
+        loginSubtitle: 'Enter your Student ID and Phone Number',
+        memberLogin: 'Member Login',
+        phone: 'Phone Number',
+        enterPhone: 'Enter 8-digit phone number',
+        adminLogin: 'Admin Login',
         invalidCredentials: 'Invalid username or password',
         login: 'Login',
         register: 'Register',
@@ -1398,7 +1543,10 @@
         const firstBorrowerTab = borrowerWrapper.querySelector('.tab');
         if (firstBorrowerTab) firstBorrowerTab.click();
       }
-      document.getElementById('userDisplay').textContent = currentUser.display_name || currentUser.username;
+      document.getElementById('userDisplay').textContent = currentUser.display_name || currentUser.username || currentUser.uid || '';
+      // Only show change password for admin users
+      const pwdBtn = document.getElementById('changePwdBtn');
+      if (pwdBtn) pwdBtn.style.display = (currentUser.role === 'admin') ? '' : 'none';
     }
 
     async function refreshUser() {
@@ -1424,10 +1572,36 @@
     }
 
     async function doLogin() {
-      const username = document.getElementById('loginUsername').value.trim();
-      const password = document.getElementById('loginPassword').value;
+      const uid = document.getElementById('loginUid').value.trim();
+      const phone = document.getElementById('loginPhone').value.trim();
       const errorEl = document.getElementById('loginError');
-      if (!username || !password) { errorEl.textContent = t('enterUsername'); errorEl.style.display = 'block'; return; }
+      if (!uid || !phone) { errorEl.textContent = '請輸入學生證號和電話號碼 / Enter Student ID and Phone'; errorEl.style.display = 'block'; return; }
+      try {
+        const res = await fetch('/api/auth/login', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ uid, phone })
+        });
+        const data = await res.json();
+        if (res.ok) {
+          token = data.token; currentUser = data.user;
+          localStorage.setItem('library_token', token);
+          errorEl.style.display = 'none';
+          try {
+            const meRes = await fetch('/api/auth/me', { headers: { 'Authorization': 'Bearer ' + token } });
+            if (meRes.ok) currentUser = await meRes.json();
+          } catch {}
+          showDashboard();
+        } else {
+          errorEl.textContent = data.error || 'Login failed'; errorEl.style.display = 'block';
+        }
+      } catch { errorEl.textContent = 'Network error'; errorEl.style.display = 'block'; }
+    }
+
+    async function doAdminLogin() {
+      const username = document.getElementById('adminUsername').value.trim();
+      const password = document.getElementById('adminPassword').value;
+      const errorEl = document.getElementById('adminLoginError');
+      if (!username || !password) { errorEl.textContent = 'Please enter admin username and password'; errorEl.style.display = 'block'; return; }
       try {
         const res = await fetch('/api/auth/login', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
@@ -1438,36 +1612,33 @@
           token = data.token; currentUser = data.user;
           localStorage.setItem('library_token', token);
           errorEl.style.display = 'none';
-          // Fetch full user data including borrow count
           try {
             const meRes = await fetch('/api/auth/me', { headers: { 'Authorization': 'Bearer ' + token } });
             if (meRes.ok) currentUser = await meRes.json();
           } catch {}
           showDashboard();
         } else {
-          errorEl.textContent = data.error === 'Invalid credentials' ? t('invalidCredentials') : (data.error || 'Login failed'); errorEl.style.display = 'block';
+          errorEl.textContent = data.error || 'Login failed'; errorEl.style.display = 'block';
         }
       } catch { errorEl.textContent = 'Network error'; errorEl.style.display = 'block'; }
     }
 
     async function doSignup() {
       const uid = document.getElementById('signupUid').value.trim();
-      const username = document.getElementById('signupUsername').value.trim();
-      const password = document.getElementById('signupPassword').value;
+      const phone = document.getElementById('signupPhone').value.trim();
       const errorEl = document.getElementById('signupError');
-      if (!uid || !username || !password) { errorEl.textContent = t('enterUsername'); errorEl.style.display = 'block'; return; }
+      if (!uid || !phone) { errorEl.textContent = '請輸入學生證號和電話號碼 / Enter Student ID and Phone'; errorEl.style.display = 'block'; return; }
       try {
         const res = await fetch('/api/auth/signup', {
           method: 'POST', headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ uid, username, password })
+          body: JSON.stringify({ uid, phone })
         });
         const data = await res.json();
         if (res.ok) {
-          showToast(t('userAdded'), 'success');
+          showToast(data.message || t('userAdded'), 'success');
           document.querySelector('.login-tab[data-form="login"]').click();
           document.getElementById('signupUid').value = '';
-          document.getElementById('signupUsername').value = '';
-          document.getElementById('signupPassword').value = '';
+          document.getElementById('signupPhone').value = '';
         } else {
           if (data.error === 'Not a registered member') {
             errorEl.textContent = t('notMember');
@@ -1495,7 +1666,8 @@
         document.querySelectorAll('.login-tab').forEach(t => t.classList.remove('active'));
         document.querySelectorAll('.login-form').forEach(f => f.classList.remove('active'));
         tab.classList.add('active');
-        document.getElementById(tab.dataset.form + 'Form').classList.add('active');
+        const formId = tab.dataset.form === 'adminLogin' ? 'adminLoginForm' : tab.dataset.form + 'Form';
+        document.getElementById(formId).classList.add('active');
       });
     });
 

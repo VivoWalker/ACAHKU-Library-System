@@ -90,6 +90,8 @@ async function initDB() {
       password_hash TEXT NOT NULL,
       role TEXT NOT NULL CHECK(role IN ('admin', 'borrower')),
       display_name TEXT,
+      uid TEXT,
+      phone TEXT,
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP
     )
   `);
@@ -132,6 +134,8 @@ async function initDB() {
   try { db.run("ALTER TABLE borrow_records ADD COLUMN fine DECIMAL(10,2) DEFAULT 0"); } catch (e) { }
   try { db.run("ALTER TABLE borrow_records ADD COLUMN renewal_count INTEGER DEFAULT 0"); } catch (e) { }
   try { db.run("ALTER TABLE books ADD COLUMN tags TEXT DEFAULT '[]'"); } catch (e) { }
+  try { db.run("ALTER TABLE users ADD COLUMN uid TEXT"); } catch (e) { }
+  try { db.run("ALTER TABLE users ADD COLUMN phone TEXT"); } catch (e) { }
 
   try {
     db.run(`CREATE INDEX IF NOT EXISTS idx_books_book_id ON books(book_id)`);
@@ -143,8 +147,8 @@ async function initDB() {
   const adminExists = db.exec("SELECT id FROM users WHERE username = 'admin'");
   if (adminExists.length === 0 || adminExists[0].values.length === 0) {
     const hash = bcrypt.hashSync('admin123', 10);
-    db.run("INSERT INTO users (username, password_hash, role, display_name) VALUES (?, ?, ?, ?)",
-      ['admin', hash, 'admin', '系统管理员']);
+    db.run("INSERT INTO users (username, password_hash, role, display_name, uid, phone) VALUES (?, ?, ?, ?, ?, ?)",
+      ['admin', hash, 'admin', '系统管理员', '', '']);
     console.log('Default admin created: admin / admin123');
   }
 
@@ -210,7 +214,7 @@ function requireAdmin(req, res, next) {
 // Auth routes
 app.post('/api/auth/register', authenticate, requireAdmin, async (req, res) => {
   try {
-    const { username, password, role, display_name } = req.body;
+    const { username, password, role, display_name, uid, phone } = req.body;
     if (!username || !password || !role) {
       return res.status(400).json({ error: 'Missing required fields' });
     }
@@ -219,8 +223,8 @@ app.post('/api/auth/register', authenticate, requireAdmin, async (req, res) => {
     }
     const hash = await bcrypt.hash(password, 10);
     try {
-      db.run("INSERT INTO users (username, password_hash, role, display_name) VALUES (?, ?, ?, ?)",
-        [username, hash, role, display_name || username]);
+      db.run("INSERT INTO users (username, password_hash, role, display_name, uid, phone) VALUES (?, ?, ?, ?, ?, ?)",
+        [username, hash, role, display_name || username, uid || '', phone || '']);
       saveDB();
       res.json({ success: true, message: 'User created' });
     } catch (err) {
@@ -237,23 +241,33 @@ app.post('/api/auth/register', authenticate, requireAdmin, async (req, res) => {
 
 app.post('/api/auth/login', async (req, res) => {
   try {
-    const { username, password } = req.body;
-    if (!username || !password) {
-      return res.status(400).json({ error: 'Missing credentials' });
+    const { uid, phone, username, password } = req.body;
+
+    // Admin password login (backward compatible)
+    if (username && password) {
+      const user = queryOne("SELECT * FROM users WHERE username = ? AND role = 'admin'", [username]);
+      if (!user) return res.status(401).json({ error: 'Invalid credentials' });
+      const valid = await bcrypt.compare(password, user.password_hash);
+      if (!valid) return res.status(401).json({ error: 'Invalid credentials' });
+      const token = jwt.sign({ id: user.id, username: user.username, role: user.role }, JWT_SECRET, { expiresIn: '7d' });
+      return res.json({ token, user: { id: user.id, username: user.username, role: user.role, display_name: user.display_name } });
     }
-    const user = queryOne("SELECT * FROM users WHERE username = ?", [username]);
-    if (!user) {
-      return res.status(401).json({ error: 'Invalid credentials' });
+
+    // Member login: UID + phone
+    if (!uid || !phone) {
+      return res.status(400).json({ error: 'Missing student ID or phone number' });
     }
-    const valid = await bcrypt.compare(password, user.password_hash);
-    if (!valid) {
-      return res.status(401).json({ error: 'Invalid credentials' });
+    const uidStr = String(uid).trim();
+    const phoneStr = String(phone).trim();
+    const uidNum = Math.floor(Number(uidStr));
+    if (!validMemberUIDs.has(uidNum)) {
+      return res.status(403).json({ error: 'Not a registered member' });
     }
+    const user = queryOne("SELECT * FROM users WHERE (uid = ? OR uid = ?) AND role = 'borrower'", [uidStr, String(uidNum)]);
+    if (!user) return res.status(401).json({ error: 'Account not found. Please register first.' });
+    if (user.phone !== phoneStr) return res.status(401).json({ error: 'Phone number does not match' });
     const token = jwt.sign({ id: user.id, username: user.username, role: user.role }, JWT_SECRET, { expiresIn: '7d' });
-    res.json({
-      token,
-      user: { id: user.id, username: user.username, role: user.role, display_name: user.display_name }
-    });
+    res.json({ token, user: { id: user.id, username: user.username, role: user.role, display_name: user.display_name, uid: user.uid, phone: user.phone } });
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: 'Server error' });
@@ -261,7 +275,7 @@ app.post('/api/auth/login', async (req, res) => {
 });
 
 app.get('/api/auth/me', authenticate, (req, res) => {
-  const user = queryOne("SELECT id, username, role, display_name FROM users WHERE id = ?", [req.user.id]);
+  const user = queryOne("SELECT id, username, role, display_name, uid, phone FROM users WHERE id = ?", [req.user.id]);
   const activeBorrows = queryOne('SELECT COUNT(*) as count FROM borrow_records WHERE user_id = ? AND returned = 0', [req.user.id]);
   res.json({ ...user, activeBorrows: activeBorrows ? activeBorrows.count : 0, maxBorrows: MAX_BORROWS });
 });
@@ -290,28 +304,41 @@ app.post('/api/auth/change-password', authenticate, async (req, res) => {
 });
 
 // Self-registration (no auth required)
+// Self-registration — UID + phone, no password
 app.post('/api/auth/signup', async (req, res) => {
   try {
-    const { username, password, uid } = req.body;
-    if (!username || !password || !uid) {
-      return res.status(400).json({ error: 'Missing username, password, or student ID' });
+    const { uid, phone } = req.body;
+    if (!uid || !phone) {
+      return res.status(400).json({ error: 'Missing student ID or phone number' });
     }
-    if (username.length < 3 || password.length < 6) {
-      return res.status(400).json({ error: 'Username must be 3+ chars, password must be 6+ chars' });
+    const uidStr = String(uid).trim();
+    const phoneStr = String(phone).trim();
+    if (!/^\d{5,10}$/.test(uidStr)) {
+      return res.status(400).json({ error: 'Invalid student ID format' });
     }
-    const uidNum = Math.floor(Number(uid));
+    if (!/^\d{8}$/.test(phoneStr)) {
+      return res.status(400).json({ error: 'Phone number must be 8 digits' });
+    }
+    const uidNum = Math.floor(Number(uidStr));
     if (!validMemberUIDs.has(uidNum)) {
       return res.status(403).json({ error: 'Not a registered member' });
     }
-    const hash = await bcrypt.hash(password, 10);
+    // Check if this UID already has an account
+    const existing = queryOne("SELECT id FROM users WHERE (uid = ? OR uid = ?) AND role = 'borrower'", [uidStr, String(uidNum)]);
+    if (existing) {
+      // Update phone number for existing account
+      db.run("UPDATE users SET phone = ? WHERE id = ?", [phoneStr, existing.id]);
+      saveDB();
+      return res.json({ success: true, message: 'Phone number updated' });
+    }
     try {
-      db.run("INSERT INTO users (username, password_hash, role, display_name) VALUES (?, ?, ?, ?)",
-        [username, hash, 'borrower', username]);
+      db.run("INSERT INTO users (username, password_hash, role, display_name, uid, phone) VALUES (?, ?, ?, ?, ?, ?)",
+        [uidStr, '', 'borrower', uidStr, uidStr, phoneStr]);
       saveDB();
       res.json({ success: true, message: 'Account created' });
     } catch (err) {
       if (err.message.includes('UNIQUE')) {
-        return res.status(400).json({ error: 'Username already exists' });
+        return res.status(400).json({ error: 'Account already exists' });
       }
       throw err;
     }
